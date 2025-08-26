@@ -1,0 +1,3611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PinWindowClass</class>
+ <widget class="QMainWindow" name="PinWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1608</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PinWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_23">
+    <property name="leftMargin">
+     <number>2</number>
+    </property>
+    <property name="topMargin">
+     <number>2</number>
+    </property>
+    <property name="rightMargin">
+     <number>2</number>
+    </property>
+    <property name="bottomMargin">
+     <number>2</number>
+    </property>
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_22" stretch="1,20">
+      <property name="spacing">
+       <number>1</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>2</number>
+         </property>
+         <property name="topMargin">
+          <number>2</number>
+         </property>
+         <property name="rightMargin">
+          <number>2</number>
+         </property>
+         <property name="bottomMargin">
+          <number>2</number>
+         </property>
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_18" stretch="1,2,20,1">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_17" stretch="1,10">
+             <item>
+              <widget class="QLabel" name="label_112">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap>:/QtToolTest/Resources/Quectel LOGO-20220215.png</pixmap>
+               </property>
+               <property name="scaledContents">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>638</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_28" stretch="1,1,1,1">
+             <property name="spacing">
+              <number>20</number>
+             </property>
+             <item>
+              <widget class="QToolButton" name="toolButton_4">
+               <property name="font">
+                <font>
+                 <family>Times New Roman</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextOnly</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButton_5">
+               <property name="font">
+                <font>
+                 <family>Times New Roman</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>日志</string>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextOnly</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButton_6">
+               <property name="font">
+                <font>
+                 <family>Liberation Serif</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>语言</string>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextOnly</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButton_7">
+               <property name="font">
+                <font>
+                 <family>Liberation Serif</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>帮助</string>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextOnly</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>678</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="1,11,0">
+             <item>
+              <widget class="QToolButton" name="toolButton">
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>:/QtToolTest/Resources/窗口最小化.png</normaloff>:/QtToolTest/Resources/窗口最小化.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>25</width>
+                 <height>25</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButton_2">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>:/QtToolTest/Resources/expand-全屏化.png</normaloff>:/QtToolTest/Resources/expand-全屏化.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>25</width>
+                 <height>25</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButton_3">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>:/QtToolTest/Resources/关闭.png</normaloff>:/QtToolTest/Resources/关闭.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>25</width>
+                 <height>25</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_51" stretch="8,5">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_7" stretch="1,16,0,3">
+          <property name="spacing">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_4">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_8">
+             <property name="leftMargin">
+              <number>1</number>
+             </property>
+             <property name="topMargin">
+              <number>1</number>
+             </property>
+             <property name="rightMargin">
+              <number>1</number>
+             </property>
+             <property name="bottomMargin">
+              <number>1</number>
+             </property>
+             <property name="spacing">
+              <number>1</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="1,0,0,10,0,0">
+               <item>
+                <widget class="QCheckBox" name="ckb_ShowObj">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>缩放时显示图形</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="ckb_ShowObj_Fill">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="mouseTracking">
+                  <bool>true</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>图形填充显示</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBox_Gray">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>灰度处理</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="lbl_Status">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="pBtn_FitImage">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>还原</string>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>20</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="btn_ClearWindow">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>重置</string>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>20</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="CMyLabel" name="lbl_Window">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_33">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_26">
+              <item>
+               <widget class="QPushButton" name="pBtn_ReadImage">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>打开图片</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pb_Run">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>运行</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_32">
+              <item>
+               <widget class="QPushButton" name="pb_SaveData">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>保存参数</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pb_ReadData">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>读取参数</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPlainTextEdit" name="plainTextEdit">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>594</width>
+             <height>951</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_52">
+            <item>
+             <widget class="QTabWidget" name="tabWidget">
+              <property name="font">
+               <font>
+                <family>微软雅黑</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="tab">
+               <attribute name="title">
+                <string>Pin针检测</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_18">
+                <item row="0" column="0">
+                 <widget class="QTabWidget" name="tabWidget_6">
+                  <property name="currentIndex">
+                   <number>0</number>
+                  </property>
+                  <widget class="QWidget" name="tab_13">
+                   <attribute name="title">
+                    <string>位置修正</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_27">
+                    <item row="0" column="0">
+                     <widget class="QTabWidget" name="tabWidget_7">
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="tab_15">
+                       <attribute name="title">
+                        <string>参数</string>
+                       </attribute>
+                       <layout class="QGridLayout" name="gridLayout_25">
+                        <item row="0" column="0">
+                         <layout class="QVBoxLayout" name="verticalLayout_37">
+                          <item>
+                           <layout class="QVBoxLayout" name="verticalLayout_38">
+                            <item>
+                             <layout class="QVBoxLayout" name="verticalLayout_40">
+                              <item>
+                               <layout class="QVBoxLayout" name="verticalLayout_41">
+                                <item>
+                                 <layout class="QHBoxLayout" name="horizontalLayout_39" stretch="2,5">
+                                  <item>
+                                   <widget class="QCheckBox" name="ckb_PositionCorrection">
+                                    <property name="text">
+                                     <string>启用位置修正</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_38">
+                                    <item>
+                                     <widget class="QPushButton" name="pb_SearchROI_PositionCorrection">
+                                      <property name="text">
+                                       <string>搜索区域</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="pb_SetData_PositionCorrection">
+                                      <property name="text">
+                                       <string>参数设置</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="pb_Run_PositionCorrection">
+                                      <property name="text">
+                                       <string>运行</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <layout class="QHBoxLayout" name="horizontalLayout_40">
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_41" stretch="2,3">
+                                    <item>
+                                     <widget class="QLabel" name="label_60">
+                                      <property name="text">
+                                       <string>Row:</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QDoubleSpinBox" name="dspb_Row_PositionCorrection">
+                                      <property name="readOnly">
+                                       <bool>true</bool>
+                                      </property>
+                                      <property name="maximum">
+                                       <double>9999999.000000000000000</double>
+                                      </property>
+                                      <property name="singleStep">
+                                       <double>0.010000000000000</double>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_42" stretch="2,3">
+                                    <item>
+                                     <widget class="QLabel" name="label_61">
+                                      <property name="text">
+                                       <string>Column:</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QDoubleSpinBox" name="dspb_Column_PositionCorrection">
+                                      <property name="readOnly">
+                                       <bool>true</bool>
+                                      </property>
+                                      <property name="maximum">
+                                       <double>9999999.000000000000000</double>
+                                      </property>
+                                      <property name="singleStep">
+                                       <double>0.010000000000000</double>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_43" stretch="2,3">
+                                    <item>
+                                     <widget class="QLabel" name="label_62">
+                                      <property name="text">
+                                       <string>Angle:</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QDoubleSpinBox" name="dspb_Angle_PositionCorrection">
+                                      <property name="readOnly">
+                                       <bool>true</bool>
+                                      </property>
+                                      <property name="maximum">
+                                       <double>9999999.000000000000000</double>
+                                      </property>
+                                      <property name="singleStep">
+                                       <double>0.010000000000000</double>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                 </layout>
+                                </item>
+                               </layout>
+                              </item>
+                              <item>
+                               <layout class="QHBoxLayout" name="horizontalLayout_44" stretch="3,2">
+                                <item>
+                                 <layout class="QHBoxLayout" name="horizontalLayout_45" stretch="2,3">
+                                  <item>
+                                   <widget class="QLabel" name="label_63">
+                                    <property name="text">
+                                     <string>排序方式：</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QComboBox" name="cmb_SortType">
+                                    <item>
+                                     <property name="text">
+                                      <string>按行排序</string>
+                                     </property>
+                                    </item>
+                                    <item>
+                                     <property name="text">
+                                      <string>按列排序</string>
+                                     </property>
+                                    </item>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <widget class="QComboBox" name="cmb_ShapeSelect_PositionCorrection">
+                                  <item>
+                                   <property name="text">
+                                    <string>矩形</string>
+                                   </property>
+                                  </item>
+                                  <item>
+                                   <property name="text">
+                                    <string>仿射矩形</string>
+                                   </property>
+                                  </item>
+                                  <item>
+                                   <property name="text">
+                                    <string>圆形</string>
+                                   </property>
+                                  </item>
+                                  <item>
+                                   <property name="text">
+                                    <string>椭圆</string>
+                                   </property>
+                                  </item>
+                                  <item>
+                                   <property name="text">
+                                    <string>多边形</string>
+                                   </property>
+                                  </item>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </item>
+                            <item>
+                             <layout class="QVBoxLayout" name="verticalLayout_42">
+                              <item>
+                               <layout class="QHBoxLayout" name="horizontalLayout_46">
+                                <item>
+                                 <widget class="QPushButton" name="btn_DrawTrainRoi_Template_2">
+                                  <property name="text">
+                                   <string>训练区域</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QPushButton" name="btn_DrawShaddowRoi_Template_2">
+                                  <property name="text">
+                                   <string>掩模区域</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QPushButton" name="btn_UnionRoi_Template_2">
+                                  <property name="text">
+                                   <string>合并ROI</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QPushButton" name="btn_ClearRoi_Template_2">
+                                  <property name="text">
+                                   <string>清除ROI</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QPushButton" name="btn_Train_Template_2">
+                                  <property name="text">
+                                   <string>训练模板</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item>
+                               <layout class="QHBoxLayout" name="horizontalLayout_47">
+                                <item>
+                                 <layout class="QVBoxLayout" name="verticalLayout_43">
+                                  <item>
+                                   <widget class="QLabel" name="label_64">
+                                    <property name="text">
+                                     <string>匹配方式</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLabel" name="label_65">
+                                    <property name="text">
+                                     <string>起始角度</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLabel" name="label_66">
+                                    <property name="text">
+                                     <string>终止角度</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLabel" name="label_67">
+                                    <property name="text">
+                                     <string>最小行缩放</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLabel" name="label_68">
+                                    <property name="text">
+                                     <string>最大行缩放</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLabel" name="label_69">
+                                    <property name="text">
+                                     <string>最小列缩放</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLabel" name="label_70">
+                                    <property name="text">
+                                     <string>最大列缩放</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLabel" name="label_71">
+                                    <property name="text">
+                                     <string>最小分数</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLabel" name="label_72">
+                                    <property name="text">
+                                     <string>匹配个数</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <layout class="QVBoxLayout" name="verticalLayout_44">
+                                  <item>
+                                   <widget class="QComboBox" name="cmb_MatchMethod_Train_2">
+                                    <item>
+                                     <property name="text">
+                                      <string>基于形状</string>
+                                     </property>
+                                    </item>
+                                    <item>
+                                     <property name="text">
+                                      <string>基于互相关</string>
+                                     </property>
+                                    </item>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QDoubleSpinBox" name="dspb_AngleStart_Train_2">
+                                    <property name="decimals">
+                                     <number>2</number>
+                                    </property>
+                                    <property name="minimum">
+                                     <double>-180.000000000000000</double>
+                                    </property>
+                                    <property name="maximum">
+                                     <double>0.000000000000000</double>
+                                    </property>
+                                    <property name="singleStep">
+                                     <double>0.010000000000000</double>
+                                    </property>
+                                    <property name="value">
+                                     <double>-30.000000000000000</double>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QDoubleSpinBox" name="dspb_AngleExtent_Train_2">
+                                    <property name="decimals">
+                                     <number>2</number>
+                                    </property>
+                                    <property name="maximum">
+                                     <double>180.000000000000000</double>
+                                    </property>
+                                    <property name="singleStep">
+                                     <double>0.010000000000000</double>
+                                    </property>
+                                    <property name="value">
+                                     <double>30.000000000000000</double>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QDoubleSpinBox" name="dspb_ScaleRMin_Train_2">
+                                    <property name="decimals">
+                                     <number>1</number>
+                                    </property>
+                                    <property name="maximum">
+                                     <double>1.000000000000000</double>
+                                    </property>
+                                    <property name="singleStep">
+                                     <double>0.100000000000000</double>
+                                    </property>
+                                    <property name="value">
+                                     <double>1.000000000000000</double>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QDoubleSpinBox" name="dspb_ScaleRMax_Train_2">
+                                    <property name="decimals">
+                                     <number>1</number>
+                                    </property>
+                                    <property name="minimum">
+                                     <double>1.000000000000000</double>
+                                    </property>
+                                    <property name="maximum">
+                                     <double>2.000000000000000</double>
+                                    </property>
+                                    <property name="singleStep">
+                                     <double>0.100000000000000</double>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QDoubleSpinBox" name="dspb_ScaleCMin_Train_2">
+                                    <property name="decimals">
+                                     <number>1</number>
+                                    </property>
+                                    <property name="maximum">
+                                     <double>1.000000000000000</double>
+                                    </property>
+                                    <property name="singleStep">
+                                     <double>0.100000000000000</double>
+                                    </property>
+                                    <property name="value">
+                                     <double>1.000000000000000</double>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QDoubleSpinBox" name="dspb_ScaleCMax_Train_2">
+                                    <property name="decimals">
+                                     <number>1</number>
+                                    </property>
+                                    <property name="minimum">
+                                     <double>1.000000000000000</double>
+                                    </property>
+                                    <property name="maximum">
+                                     <double>2.000000000000000</double>
+                                    </property>
+                                    <property name="singleStep">
+                                     <double>0.100000000000000</double>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QDoubleSpinBox" name="dspb_MinScore_Run_2">
+                                    <property name="maximum">
+                                     <double>1.000000000000000</double>
+                                    </property>
+                                    <property name="singleStep">
+                                     <double>0.010000000000000</double>
+                                    </property>
+                                    <property name="value">
+                                     <double>0.500000000000000</double>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QSpinBox" name="spb_NumMatches_Run_2">
+                                    <property name="minimum">
+                                     <number>1</number>
+                                    </property>
+                                    <property name="maximum">
+                                     <number>1</number>
+                                    </property>
+                                    <property name="value">
+                                     <number>1</number>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </item>
+                           </layout>
+                          </item>
+                          <item>
+                           <spacer name="verticalSpacer_3">
+                            <property name="orientation">
+                             <enum>Qt::Vertical</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>20</width>
+                              <height>40</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                      <widget class="QWidget" name="tab_16">
+                       <attribute name="title">
+                        <string>结果</string>
+                       </attribute>
+                       <layout class="QGridLayout" name="gridLayout_26">
+                        <item row="0" column="0">
+                         <widget class="QTableWidget" name="tablewidget_Results_Template_2"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tab_14">
+                   <attribute name="title">
+                    <string>ROI参数</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_17">
+                    <item row="0" column="0">
+                     <layout class="QVBoxLayout" name="verticalLayout_20" stretch="1,1,1,24">
+                      <property name="spacing">
+                       <number>1</number>
+                      </property>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_24">
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_23">
+                          <item>
+                           <widget class="QLabel" name="label_11">
+                            <property name="text">
+                             <string>区域选择：</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QComboBox" name="cmb_SearchRegion"/>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pb_AddRoi">
+                          <property name="text">
+                           <string>新增</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pb_ClearRoi">
+                          <property name="text">
+                           <string>清空ROI</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_25">
+                        <item>
+                         <widget class="QComboBox" name="cmb_ShapeSelect">
+                          <item>
+                           <property name="text">
+                            <string>矩形</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>仿射矩形</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>圆形</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>椭圆</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>多边形</string>
+                           </property>
+                          </item>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pb_DrawRoi">
+                          <property name="text">
+                           <string>绘制搜索区域</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pb_SetBlobData">
+                          <property name="text">
+                           <string>参数设置</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pb_BlobTest">
+                          <property name="text">
+                           <string>运行测试</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_14">
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_19">
+                          <item>
+                           <widget class="QLabel" name="label_4">
+                            <property name="text">
+                             <string>Pin针检测方式：</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QComboBox" name="cmb_PinDetectType">
+                            <item>
+                             <property name="text">
+                              <string>Blob</string>
+                             </property>
+                            </item>
+                            <item>
+                             <property name="text">
+                              <string>模板匹配</string>
+                             </property>
+                            </item>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_21">
+                          <item>
+                           <widget class="QLabel" name="label_7">
+                            <property name="text">
+                             <string>Pin针排序方式：</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QComboBox" name="cmb_PinSortType">
+                            <item>
+                             <property name="text">
+                              <string>按列排序</string>
+                             </property>
+                            </item>
+                            <item>
+                             <property name="text">
+                              <string>按行排序</string>
+                             </property>
+                            </item>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="QTabWidget" name="tabWidget_2">
+                        <property name="currentIndex">
+                         <number>0</number>
+                        </property>
+                        <widget class="QWidget" name="tab_3">
+                         <attribute name="title">
+                          <string>Blob</string>
+                         </attribute>
+                         <layout class="QGridLayout" name="gridLayout_28">
+                          <item row="0" column="0">
+                           <widget class="QTabWidget" name="tabWidget_3">
+                            <property name="currentIndex">
+                             <number>0</number>
+                            </property>
+                            <widget class="QWidget" name="tab_5">
+                             <attribute name="title">
+                              <string>参数设置</string>
+                             </attribute>
+                             <layout class="QGridLayout" name="gridLayout_19">
+                              <property name="leftMargin">
+                               <number>1</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>1</number>
+                              </property>
+                              <property name="rightMargin">
+                               <number>1</number>
+                              </property>
+                              <property name="bottomMargin">
+                               <number>1</number>
+                              </property>
+                              <property name="spacing">
+                               <number>1</number>
+                              </property>
+                              <item row="0" column="0">
+                               <layout class="QVBoxLayout" name="verticalLayout_34" stretch="3,5">
+                                <property name="spacing">
+                                 <number>1</number>
+                                </property>
+                                <item>
+                                 <layout class="QHBoxLayout" name="horizontalLayout_5">
+                                  <item>
+                                   <widget class="QGroupBox" name="groupBox_5">
+                                    <property name="title">
+                                     <string>二值化</string>
+                                    </property>
+                                    <layout class="QGridLayout" name="gridLayout_2">
+                                     <property name="leftMargin">
+                                      <number>1</number>
+                                     </property>
+                                     <property name="topMargin">
+                                      <number>1</number>
+                                     </property>
+                                     <property name="rightMargin">
+                                      <number>1</number>
+                                     </property>
+                                     <property name="bottomMargin">
+                                      <number>1</number>
+                                     </property>
+                                     <property name="spacing">
+                                      <number>1</number>
+                                     </property>
+                                     <item row="0" column="0">
+                                      <layout class="QVBoxLayout" name="verticalLayout_69">
+                                       <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_166">
+                                         <item>
+                                          <widget class="QLabel" name="label_150">
+                                           <property name="text">
+                                            <string>二值化方式：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QComboBox" name="cmb_Type_Binarization">
+                                           <item>
+                                            <property name="text">
+                                             <string>固定阈值</string>
+                                            </property>
+                                           </item>
+                                           <item>
+                                            <property name="text">
+                                             <string>自适应阈值</string>
+                                            </property>
+                                           </item>
+                                           <item>
+                                            <property name="text">
+                                             <string>动态阈值</string>
+                                            </property>
+                                           </item>
+                                          </widget>
+                                         </item>
+                                        </layout>
+                                       </item>
+                                       <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_167">
+                                         <item>
+                                          <widget class="QLabel" name="label_151">
+                                           <property name="text">
+                                            <string>低阈值：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QSpinBox" name="spb_LowThreshold">
+                                           <property name="maximum">
+                                            <number>255</number>
+                                           </property>
+                                           <property name="value">
+                                            <number>50</number>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                        </layout>
+                                       </item>
+                                       <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_168">
+                                         <item>
+                                          <widget class="QLabel" name="label_190">
+                                           <property name="text">
+                                            <string>高阈值：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QSpinBox" name="spb_HighThreshold">
+                                           <property name="maximum">
+                                            <number>255</number>
+                                           </property>
+                                           <property name="value">
+                                            <number>128</number>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                        </layout>
+                                       </item>
+                                       <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_169">
+                                         <item>
+                                          <widget class="QLabel" name="label_191">
+                                           <property name="text">
+                                            <string>Sigma：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QDoubleSpinBox" name="dspb_Sigma">
+                                           <property name="maximum">
+                                            <double>99999.000000000000000</double>
+                                           </property>
+                                           <property name="singleStep">
+                                            <double>0.010000000000000</double>
+                                           </property>
+                                           <property name="value">
+                                            <double>3.000000000000000</double>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                        </layout>
+                                       </item>
+                                       <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_170">
+                                         <item>
+                                          <widget class="QLabel" name="label_192">
+                                           <property name="text">
+                                            <string>动态阈值滤波核宽度：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QDoubleSpinBox" name="dspb_DynThresholdWidth">
+                                           <property name="maximum">
+                                            <double>99999.000000000000000</double>
+                                           </property>
+                                           <property name="singleStep">
+                                            <double>0.010000000000000</double>
+                                           </property>
+                                           <property name="value">
+                                            <double>11.000000000000000</double>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                        </layout>
+                                       </item>
+                                       <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_171">
+                                         <item>
+                                          <widget class="QLabel" name="label_193">
+                                           <property name="text">
+                                            <string>动态阈值滤波核高度：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QDoubleSpinBox" name="dspb_DynThresholdHeight">
+                                           <property name="maximum">
+                                            <double>99999.000000000000000</double>
+                                           </property>
+                                           <property name="singleStep">
+                                            <double>0.010000000000000</double>
+                                           </property>
+                                           <property name="value">
+                                            <double>11.000000000000000</double>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                        </layout>
+                                       </item>
+                                       <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_172">
+                                         <item>
+                                          <widget class="QLabel" name="label_194">
+                                           <property name="text">
+                                            <string>动态阈值对比度：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QSpinBox" name="spb_DynThresholdContrast">
+                                           <property name="maximum">
+                                            <number>255</number>
+                                           </property>
+                                           <property name="value">
+                                            <number>10</number>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                        </layout>
+                                       </item>
+                                       <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_173">
+                                         <item>
+                                          <widget class="QLabel" name="label_195">
+                                           <property name="text">
+                                            <string>动态阈值获取亮/暗区域：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QComboBox" name="cmb_Polarity">
+                                           <item>
+                                            <property name="text">
+                                             <string>dark</string>
+                                            </property>
+                                           </item>
+                                           <item>
+                                            <property name="text">
+                                             <string>light</string>
+                                            </property>
+                                           </item>
+                                           <item>
+                                            <property name="text">
+                                             <string>equal</string>
+                                            </property>
+                                           </item>
+                                           <item>
+                                            <property name="text">
+                                             <string>not_equal</string>
+                                            </property>
+                                           </item>
+                                          </widget>
+                                         </item>
+                                        </layout>
+                                       </item>
+                                      </layout>
+                                     </item>
+                                    </layout>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QGroupBox" name="groupBox_6">
+                                    <property name="title">
+                                     <string>形态学</string>
+                                    </property>
+                                    <layout class="QGridLayout" name="gridLayout_3">
+                                     <property name="leftMargin">
+                                      <number>1</number>
+                                     </property>
+                                     <property name="topMargin">
+                                      <number>1</number>
+                                     </property>
+                                     <property name="rightMargin">
+                                      <number>1</number>
+                                     </property>
+                                     <property name="bottomMargin">
+                                      <number>1</number>
+                                     </property>
+                                     <property name="spacing">
+                                      <number>1</number>
+                                     </property>
+                                     <item row="0" column="0">
+                                      <layout class="QHBoxLayout" name="horizontalLayout_174">
+                                       <item>
+                                        <widget class="QLabel" name="label_196">
+                                         <property name="text">
+                                          <string>形态学方式：</string>
+                                         </property>
+                                        </widget>
+                                       </item>
+                                       <item>
+                                        <widget class="QComboBox" name="cmb_OperatorType">
+                                         <item>
+                                          <property name="text">
+                                           <string>null</string>
+                                          </property>
+                                         </item>
+                                         <item>
+                                          <property name="text">
+                                           <string>矩形开运算</string>
+                                          </property>
+                                         </item>
+                                         <item>
+                                          <property name="text">
+                                           <string>矩形闭运算</string>
+                                          </property>
+                                         </item>
+                                         <item>
+                                          <property name="text">
+                                           <string>圆形开运算</string>
+                                          </property>
+                                         </item>
+                                         <item>
+                                          <property name="text">
+                                           <string>圆形闭运算</string>
+                                          </property>
+                                         </item>
+                                         <item>
+                                          <property name="text">
+                                           <string>矩形腐蚀</string>
+                                          </property>
+                                         </item>
+                                         <item>
+                                          <property name="text">
+                                           <string>矩形膨胀</string>
+                                          </property>
+                                         </item>
+                                         <item>
+                                          <property name="text">
+                                           <string>圆形腐蚀</string>
+                                          </property>
+                                         </item>
+                                         <item>
+                                          <property name="text">
+                                           <string>圆形膨胀</string>
+                                          </property>
+                                         </item>
+                                        </widget>
+                                       </item>
+                                      </layout>
+                                     </item>
+                                     <item row="1" column="0">
+                                      <layout class="QHBoxLayout" name="horizontalLayout_175">
+                                       <item>
+                                        <widget class="QLabel" name="label_197">
+                                         <property name="text">
+                                          <string>结构元素宽：</string>
+                                         </property>
+                                        </widget>
+                                       </item>
+                                       <item>
+                                        <widget class="QDoubleSpinBox" name="dsb_OperatorWidth">
+                                         <property name="maximum">
+                                          <double>99999.000000000000000</double>
+                                         </property>
+                                         <property name="singleStep">
+                                          <double>0.010000000000000</double>
+                                         </property>
+                                         <property name="value">
+                                          <double>3.000000000000000</double>
+                                         </property>
+                                        </widget>
+                                       </item>
+                                      </layout>
+                                     </item>
+                                     <item row="2" column="0">
+                                      <layout class="QHBoxLayout" name="horizontalLayout_176">
+                                       <item>
+                                        <widget class="QLabel" name="label_198">
+                                         <property name="text">
+                                          <string>结构元素高：</string>
+                                         </property>
+                                        </widget>
+                                       </item>
+                                       <item>
+                                        <widget class="QDoubleSpinBox" name="dsb_OperatorHeight">
+                                         <property name="maximum">
+                                          <double>99999.000000000000000</double>
+                                         </property>
+                                         <property name="singleStep">
+                                          <double>0.010000000000000</double>
+                                         </property>
+                                         <property name="value">
+                                          <double>3.000000000000000</double>
+                                         </property>
+                                        </widget>
+                                       </item>
+                                      </layout>
+                                     </item>
+                                     <item row="3" column="0">
+                                      <layout class="QHBoxLayout" name="horizontalLayout_177">
+                                       <item>
+                                        <widget class="QLabel" name="label_199">
+                                         <property name="text">
+                                          <string>结构元素半径：</string>
+                                         </property>
+                                        </widget>
+                                       </item>
+                                       <item>
+                                        <widget class="QDoubleSpinBox" name="dsb_OperatorRadius">
+                                         <property name="maximum">
+                                          <double>99999.000000000000000</double>
+                                         </property>
+                                         <property name="singleStep">
+                                          <double>0.010000000000000</double>
+                                         </property>
+                                         <property name="value">
+                                          <double>3.000000000000000</double>
+                                         </property>
+                                        </widget>
+                                       </item>
+                                      </layout>
+                                     </item>
+                                    </layout>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <widget class="QGroupBox" name="groupBox_3">
+                                  <property name="title">
+                                   <string>筛选</string>
+                                  </property>
+                                  <layout class="QGridLayout" name="gridLayout_15">
+                                   <property name="leftMargin">
+                                    <number>1</number>
+                                   </property>
+                                   <property name="topMargin">
+                                    <number>1</number>
+                                   </property>
+                                   <property name="rightMargin">
+                                    <number>1</number>
+                                   </property>
+                                   <property name="bottomMargin">
+                                    <number>1</number>
+                                   </property>
+                                   <property name="spacing">
+                                    <number>1</number>
+                                   </property>
+                                   <item row="0" column="0">
+                                    <layout class="QVBoxLayout" name="verticalLayout_33" stretch="10,1">
+                                     <property name="spacing">
+                                      <number>1</number>
+                                     </property>
+                                     <item>
+                                      <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,3,3">
+                                       <item>
+                                        <layout class="QVBoxLayout" name="verticalLayout_2">
+                                         <item>
+                                          <widget class="QLabel" name="label">
+                                           <property name="text">
+                                            <string>面积：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QLabel" name="label_10">
+                                           <property name="text">
+                                            <string>X坐标：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QLabel" name="label_9">
+                                           <property name="text">
+                                            <string>Y坐标：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QLabel" name="label_2">
+                                           <property name="text">
+                                            <string>外接矩半长：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QLabel" name="label_3">
+                                           <property name="text">
+                                            <string>外接矩半宽：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QLabel" name="label_28">
+                                           <property name="text">
+                                            <string>圆度：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QLabel" name="label_37">
+                                           <property name="text">
+                                            <string>矩形度：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QLabel" name="label_44">
+                                           <property name="text">
+                                            <string>宽：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QLabel" name="label_45">
+                                           <property name="text">
+                                            <string>高：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QLabel" name="label_26">
+                                           <property name="text">
+                                            <string>孔洞填充：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                        </layout>
+                                       </item>
+                                       <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,1">
+                                         <item>
+                                          <layout class="QVBoxLayout" name="verticalLayout_3">
+                                           <item>
+                                            <widget class="QLabel" name="label_202">
+                                             <property name="text">
+                                              <string>最小值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_210">
+                                             <property name="text">
+                                              <string>最小值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_208">
+                                             <property name="text">
+                                              <string>最小值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_204">
+                                             <property name="text">
+                                              <string>最小值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_206">
+                                             <property name="text">
+                                              <string>最小值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_212">
+                                             <property name="text">
+                                              <string>最小值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_214">
+                                             <property name="text">
+                                              <string>最小值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_215">
+                                             <property name="text">
+                                              <string>最小值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_216">
+                                             <property name="text">
+                                              <string>最小值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_217">
+                                             <property name="text">
+                                              <string>最小值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                          </layout>
+                                         </item>
+                                         <item>
+                                          <layout class="QVBoxLayout" name="verticalLayout_32">
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_AreaFilter_Min">
+                                             <property name="maximum">
+                                              <double>999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_ColumnFilter_Min">
+                                             <property name="maximum">
+                                              <double>999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_RowFilter_Min">
+                                             <property name="maximum">
+                                              <double>999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_RecLen1Filter_Min">
+                                             <property name="maximum">
+                                              <double>999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_RecLen2Filter_Min">
+                                             <property name="maximum">
+                                              <double>999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_CircularityFilter_Min">
+                                             <property name="minimum">
+                                              <double>0.000000000000000</double>
+                                             </property>
+                                             <property name="maximum">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>0.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_RectangularityFilter_Min">
+                                             <property name="minimum">
+                                              <double>0.000000000000000</double>
+                                             </property>
+                                             <property name="maximum">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>0.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_WidthFilter_Min">
+                                             <property name="minimum">
+                                              <double>0.000000000000000</double>
+                                             </property>
+                                             <property name="maximum">
+                                              <double>999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_HeightFilter_Min">
+                                             <property name="minimum">
+                                              <double>0.000000000000000</double>
+                                             </property>
+                                             <property name="maximum">
+                                              <double>999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_FillUpShape_Min">
+                                             <property name="minimum">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                             <property name="maximum">
+                                              <double>999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                          </layout>
+                                         </item>
+                                        </layout>
+                                       </item>
+                                       <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
+                                         <item>
+                                          <layout class="QVBoxLayout" name="verticalLayout_31">
+                                           <item>
+                                            <widget class="QLabel" name="label_203">
+                                             <property name="text">
+                                              <string>最大值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_211">
+                                             <property name="text">
+                                              <string>最大值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_209">
+                                             <property name="text">
+                                              <string>最大值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_205">
+                                             <property name="text">
+                                              <string>最大值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_207">
+                                             <property name="text">
+                                              <string>最大值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_213">
+                                             <property name="text">
+                                              <string>最大值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_218">
+                                             <property name="text">
+                                              <string>最大值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_219">
+                                             <property name="text">
+                                              <string>最大值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_220">
+                                             <property name="text">
+                                              <string>最大值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QLabel" name="label_221">
+                                             <property name="text">
+                                              <string>最大值：</string>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                          </layout>
+                                         </item>
+                                         <item>
+                                          <layout class="QVBoxLayout" name="verticalLayout">
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_AreaFilter_Max">
+                                             <property name="maximum">
+                                              <double>9999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>1000000.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_ColumnFilter_Max">
+                                             <property name="maximum">
+                                              <double>999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>10000.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_RowFilter_Max">
+                                             <property name="maximum">
+                                              <double>999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>10000.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_RecLen1Filter_Max">
+                                             <property name="maximum">
+                                              <double>999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>10000.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_RecLen2Filter_Max">
+                                             <property name="maximum">
+                                              <double>999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>10000.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_CircularityFilter_Max">
+                                             <property name="maximum">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_RectangularityFilter_Max">
+                                             <property name="maximum">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>1.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_WidthFilter_Max">
+                                             <property name="maximum">
+                                              <double>999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>1000000.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_HeightFilter_Max">
+                                             <property name="maximum">
+                                              <double>999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>1000000.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                           <item>
+                                            <widget class="QDoubleSpinBox" name="dspb_FillUpShape_Max">
+                                             <property name="maximum">
+                                              <double>9999999999.000000000000000</double>
+                                             </property>
+                                             <property name="singleStep">
+                                              <double>0.010000000000000</double>
+                                             </property>
+                                             <property name="value">
+                                              <double>10.000000000000000</double>
+                                             </property>
+                                            </widget>
+                                           </item>
+                                          </layout>
+                                         </item>
+                                        </layout>
+                                       </item>
+                                      </layout>
+                                     </item>
+                                     <item>
+                                      <layout class="QHBoxLayout" name="horizontalLayout_49" stretch="1,1">
+                                       <item>
+                                        <widget class="QCheckBox" name="ckb_SelectAreaMax">
+                                         <property name="text">
+                                          <string>选择区域内面积最大值</string>
+                                         </property>
+                                        </widget>
+                                       </item>
+                                       <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_53" stretch="1,1">
+                                         <property name="spacing">
+                                          <number>1</number>
+                                         </property>
+                                         <item>
+                                          <widget class="QLabel" name="label_25">
+                                           <property name="text">
+                                            <string>Blob个数：</string>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                         <item>
+                                          <widget class="QSpinBox" name="spb_BlobCount">
+                                           <property name="minimum">
+                                            <number>1</number>
+                                           </property>
+                                           <property name="maximum">
+                                            <number>99999</number>
+                                           </property>
+                                          </widget>
+                                         </item>
+                                        </layout>
+                                       </item>
+                                      </layout>
+                                     </item>
+                                    </layout>
+                                   </item>
+                                  </layout>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </widget>
+                            <widget class="QWidget" name="tab_6">
+                             <attribute name="title">
+                              <string>结果</string>
+                             </attribute>
+                             <layout class="QGridLayout" name="gridLayout_16">
+                              <item row="0" column="0">
+                               <widget class="QTableWidget" name="tablewidget_Results_Blob"/>
+                              </item>
+                             </layout>
+                            </widget>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab_4">
+                         <attribute name="title">
+                          <string>模板匹配</string>
+                         </attribute>
+                         <layout class="QGridLayout" name="gridLayout_13">
+                          <item row="0" column="0">
+                           <widget class="QTabWidget" name="tabWidget_5">
+                            <property name="currentIndex">
+                             <number>0</number>
+                            </property>
+                            <widget class="QWidget" name="tab_9">
+                             <attribute name="title">
+                              <string>参数设置</string>
+                             </attribute>
+                             <layout class="QGridLayout" name="gridLayout_20">
+                              <item row="0" column="0">
+                               <layout class="QVBoxLayout" name="verticalLayout_36">
+                                <property name="spacing">
+                                 <number>1</number>
+                                </property>
+                                <item>
+                                 <layout class="QVBoxLayout" name="verticalLayout_35" stretch="1,10">
+                                  <property name="spacing">
+                                   <number>1</number>
+                                  </property>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_29">
+                                    <item>
+                                     <widget class="QPushButton" name="btn_DrawTrainRoi_Template">
+                                      <property name="text">
+                                       <string>绘制训练区域</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn_DrawShaddowRoi_Template">
+                                      <property name="text">
+                                       <string>绘制掩模区域</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn_UnionRoi_Template">
+                                      <property name="text">
+                                       <string>合并ROI</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn_ClearRoi_Template">
+                                      <property name="text">
+                                       <string>清除ROI</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn_Train_Template">
+                                      <property name="text">
+                                       <string>训练模板</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_30">
+                                    <item>
+                                     <layout class="QVBoxLayout" name="verticalLayout_26">
+                                      <item>
+                                       <widget class="QLabel" name="label_15">
+                                        <property name="text">
+                                         <string>匹配方式</string>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QLabel" name="label_17">
+                                        <property name="text">
+                                         <string>起始角度</string>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QLabel" name="label_18">
+                                        <property name="text">
+                                         <string>终止角度</string>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QLabel" name="label_20">
+                                        <property name="text">
+                                         <string>最小行缩放</string>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QLabel" name="label_21">
+                                        <property name="text">
+                                         <string>最大行缩放</string>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QLabel" name="label_23">
+                                        <property name="text">
+                                         <string>最小列缩放</string>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QLabel" name="label_24">
+                                        <property name="text">
+                                         <string>最大列缩放</string>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QLabel" name="label_42">
+                                        <property name="text">
+                                         <string>最小分数</string>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QLabel" name="label_43">
+                                        <property name="text">
+                                         <string>匹配个数</string>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                     </layout>
+                                    </item>
+                                    <item>
+                                     <layout class="QVBoxLayout" name="verticalLayout_27">
+                                      <item>
+                                       <widget class="QComboBox" name="cmb_MatchMethod_Train">
+                                        <item>
+                                         <property name="text">
+                                          <string>基于形状</string>
+                                         </property>
+                                        </item>
+                                        <item>
+                                         <property name="text">
+                                          <string>基于互相关</string>
+                                         </property>
+                                        </item>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QDoubleSpinBox" name="dspb_AngleStart_Train">
+                                        <property name="decimals">
+                                         <number>2</number>
+                                        </property>
+                                        <property name="minimum">
+                                         <double>-180.000000000000000</double>
+                                        </property>
+                                        <property name="maximum">
+                                         <double>0.000000000000000</double>
+                                        </property>
+                                        <property name="singleStep">
+                                         <double>0.010000000000000</double>
+                                        </property>
+                                        <property name="value">
+                                         <double>-30.000000000000000</double>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QDoubleSpinBox" name="dspb_AngleExtent_Train">
+                                        <property name="decimals">
+                                         <number>2</number>
+                                        </property>
+                                        <property name="maximum">
+                                         <double>180.000000000000000</double>
+                                        </property>
+                                        <property name="singleStep">
+                                         <double>0.010000000000000</double>
+                                        </property>
+                                        <property name="value">
+                                         <double>30.000000000000000</double>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QDoubleSpinBox" name="dspb_ScaleRMin_Train">
+                                        <property name="decimals">
+                                         <number>1</number>
+                                        </property>
+                                        <property name="maximum">
+                                         <double>1.000000000000000</double>
+                                        </property>
+                                        <property name="singleStep">
+                                         <double>0.100000000000000</double>
+                                        </property>
+                                        <property name="value">
+                                         <double>1.000000000000000</double>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QDoubleSpinBox" name="dspb_ScaleRMax_Train">
+                                        <property name="decimals">
+                                         <number>1</number>
+                                        </property>
+                                        <property name="minimum">
+                                         <double>1.000000000000000</double>
+                                        </property>
+                                        <property name="maximum">
+                                         <double>2.000000000000000</double>
+                                        </property>
+                                        <property name="singleStep">
+                                         <double>0.100000000000000</double>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QDoubleSpinBox" name="dspb_ScaleCMin_Train">
+                                        <property name="decimals">
+                                         <number>1</number>
+                                        </property>
+                                        <property name="maximum">
+                                         <double>1.000000000000000</double>
+                                        </property>
+                                        <property name="singleStep">
+                                         <double>0.100000000000000</double>
+                                        </property>
+                                        <property name="value">
+                                         <double>1.000000000000000</double>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QDoubleSpinBox" name="dspb_ScaleCMax_Train">
+                                        <property name="decimals">
+                                         <number>1</number>
+                                        </property>
+                                        <property name="minimum">
+                                         <double>1.000000000000000</double>
+                                        </property>
+                                        <property name="maximum">
+                                         <double>2.000000000000000</double>
+                                        </property>
+                                        <property name="singleStep">
+                                         <double>0.100000000000000</double>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QDoubleSpinBox" name="dspb_MinScore_Run">
+                                        <property name="maximum">
+                                         <double>1.000000000000000</double>
+                                        </property>
+                                        <property name="singleStep">
+                                         <double>0.010000000000000</double>
+                                        </property>
+                                        <property name="value">
+                                         <double>0.500000000000000</double>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                      <item>
+                                       <widget class="QSpinBox" name="spb_NumMatches_Run">
+                                        <property name="maximum">
+                                         <number>100</number>
+                                        </property>
+                                        <property name="value">
+                                         <number>1</number>
+                                        </property>
+                                       </widget>
+                                      </item>
+                                     </layout>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <spacer name="verticalSpacer">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>252</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </widget>
+                            <widget class="QWidget" name="tab_10">
+                             <attribute name="title">
+                              <string>结果</string>
+                             </attribute>
+                             <layout class="QGridLayout" name="gridLayout_14">
+                              <item row="0" column="0">
+                               <widget class="QTableWidget" name="tablewidget_Results_Template"/>
+                              </item>
+                             </layout>
+                            </widget>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_2">
+               <attribute name="title">
+                <string>基准检测</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_10">
+                <item row="0" column="0">
+                 <layout class="QVBoxLayout" name="verticalLayout_19">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_17">
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_12">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_11">
+                        <item>
+                         <widget class="QLabel" name="label_6">
+                          <property name="text">
+                           <string>基准选择：</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QComboBox" name="cmb_BaseSelect"/>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_9">
+                        <item>
+                         <widget class="QLabel" name="label_5">
+                          <property name="text">
+                           <string>基准类型：</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QComboBox" name="cmb_BaseType">
+                          <item>
+                           <property name="text">
+                            <string>直线</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>圆</string>
+                           </property>
+                          </item>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_13">
+                      <item>
+                       <widget class="QPushButton" name="pb_AddBase">
+                        <property name="text">
+                         <string>新增</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="pb_DeleteBase">
+                        <property name="text">
+                         <string>清空</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="pb_DrawBase">
+                        <property name="text">
+                         <string>绘制</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="pb_SetBaseData">
+                        <property name="text">
+                         <string>参数设置</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="pb_BaseTest">
+                        <property name="text">
+                         <string>运行测试</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="QTabWidget" name="tabWidget_4">
+                    <property name="currentIndex">
+                     <number>0</number>
+                    </property>
+                    <widget class="QWidget" name="tab_11">
+                     <attribute name="title">
+                      <string>卡尺设置</string>
+                     </attribute>
+                     <layout class="QGridLayout" name="gridLayout_11">
+                      <item row="0" column="0">
+                       <layout class="QVBoxLayout" name="verticalLayout_14">
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_15">
+                          <item>
+                           <widget class="QGroupBox" name="groupBox_8">
+                            <property name="title">
+                             <string>找边起始点</string>
+                            </property>
+                            <layout class="QGridLayout" name="gridLayout_7">
+                             <item row="0" column="0">
+                              <layout class="QHBoxLayout" name="horizontalLayout_6">
+                               <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_9">
+                                 <item>
+                                  <widget class="QLabel" name="label_38">
+                                   <property name="text">
+                                    <string>起点Row</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="label_39">
+                                   <property name="text">
+                                    <string>起点Col</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="label_40">
+                                   <property name="text">
+                                    <string>终点Row</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="label_41">
+                                   <property name="text">
+                                    <string>终点Col</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </item>
+                               <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_8">
+                                 <item>
+                                  <widget class="QDoubleSpinBox" name="dspb_RowBegin_Line">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="decimals">
+                                    <number>4</number>
+                                   </property>
+                                   <property name="maximum">
+                                    <double>999999999.000000000000000</double>
+                                   </property>
+                                   <property name="singleStep">
+                                    <double>0.000100000000000</double>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QDoubleSpinBox" name="dspb_ColBegin_Line">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="decimals">
+                                    <number>4</number>
+                                   </property>
+                                   <property name="maximum">
+                                    <double>999999999.000000000000000</double>
+                                   </property>
+                                   <property name="singleStep">
+                                    <double>0.000100000000000</double>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QDoubleSpinBox" name="dspb_RowEnd_Line">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="decimals">
+                                    <number>4</number>
+                                   </property>
+                                   <property name="maximum">
+                                    <double>999999999.000000000000000</double>
+                                   </property>
+                                   <property name="singleStep">
+                                    <double>0.000100000000000</double>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QDoubleSpinBox" name="dspb_ColEnd_Line">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="decimals">
+                                    <number>4</number>
+                                   </property>
+                                   <property name="maximum">
+                                    <double>999999999.000000000000000</double>
+                                   </property>
+                                   <property name="singleStep">
+                                    <double>0.000100000000000</double>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </item>
+                              </layout>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QGroupBox" name="groupBox_9">
+                            <property name="title">
+                             <string>找圆起始点</string>
+                            </property>
+                            <layout class="QGridLayout" name="gridLayout_6">
+                             <item row="0" column="0">
+                              <layout class="QHBoxLayout" name="horizontalLayout_7">
+                               <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_13">
+                                 <item>
+                                  <widget class="QLabel" name="label_48">
+                                   <property name="text">
+                                    <string>圆心Row</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="label_49">
+                                   <property name="text">
+                                    <string>圆心Col</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="label_54">
+                                   <property name="text">
+                                    <string>圆半径</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </item>
+                               <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_10">
+                                 <item>
+                                  <widget class="QDoubleSpinBox" name="dspb_CenterRow_Circle">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="decimals">
+                                    <number>4</number>
+                                   </property>
+                                   <property name="minimum">
+                                    <double>0.000000000000000</double>
+                                   </property>
+                                   <property name="maximum">
+                                    <double>999999999.000000000000000</double>
+                                   </property>
+                                   <property name="singleStep">
+                                    <double>0.000100000000000</double>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QDoubleSpinBox" name="dspb_CenterCol_Circle">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="decimals">
+                                    <number>4</number>
+                                   </property>
+                                   <property name="minimum">
+                                    <double>0.000000000000000</double>
+                                   </property>
+                                   <property name="maximum">
+                                    <double>999999999.000000000000000</double>
+                                   </property>
+                                   <property name="singleStep">
+                                    <double>0.000100000000000</double>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QDoubleSpinBox" name="dspb_CenterRadius_Circle">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="decimals">
+                                    <number>4</number>
+                                   </property>
+                                   <property name="minimum">
+                                    <double>0.000000000000000</double>
+                                   </property>
+                                   <property name="maximum">
+                                    <double>999999999.000000000000000</double>
+                                   </property>
+                                   <property name="singleStep">
+                                    <double>0.000100000000000</double>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </item>
+                              </layout>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <widget class="QGroupBox" name="groupBox_10">
+                          <property name="title">
+                           <string>卡尺参数</string>
+                          </property>
+                          <layout class="QGridLayout" name="gridLayout_9">
+                           <item row="0" column="0">
+                            <layout class="QHBoxLayout" name="horizontalLayout_16">
+                             <item>
+                              <layout class="QVBoxLayout" name="verticalLayout_11">
+                               <item>
+                                <widget class="QLabel" name="label_31">
+                                 <property name="text">
+                                  <string>卡尺数量</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_29">
+                                 <property name="text">
+                                  <string>搜索长度</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_30">
+                                 <property name="text">
+                                  <string>投影长度</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_32">
+                                 <property name="text">
+                                  <string>平滑(Sigma)</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_33">
+                                 <property name="text">
+                                  <string>阈值</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_34">
+                                 <property name="text">
+                                  <string>极性</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_35">
+                                 <property name="text">
+                                  <string>边缘选取</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_36">
+                                 <property name="text">
+                                  <string>最小得分</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_47">
+                                 <property name="text">
+                                  <string>距离剔除</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                             <item>
+                              <layout class="QVBoxLayout" name="verticalLayout_4">
+                               <item>
+                                <widget class="QSpinBox" name="spb_MeasureNum">
+                                 <property name="maximum">
+                                  <number>999999</number>
+                                 </property>
+                                 <property name="value">
+                                  <number>20</number>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QSpinBox" name="spb_MeasureLength1">
+                                 <property name="maximum">
+                                  <number>999999</number>
+                                 </property>
+                                 <property name="value">
+                                  <number>70</number>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QSpinBox" name="spb_MeasureLength2">
+                                 <property name="maximum">
+                                  <number>999999</number>
+                                 </property>
+                                 <property name="value">
+                                  <number>2</number>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dspb_MeasureSigma">
+                                 <property name="decimals">
+                                  <number>1</number>
+                                 </property>
+                                 <property name="minimum">
+                                  <double>0.400000000000000</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.100000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QSpinBox" name="spb_MeasureThreshold">
+                                 <property name="maximum">
+                                  <number>255</number>
+                                 </property>
+                                 <property name="value">
+                                  <number>10</number>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QComboBox" name="cmb_MeasureTransition">
+                                 <item>
+                                  <property name="text">
+                                   <string>positive</string>
+                                  </property>
+                                 </item>
+                                 <item>
+                                  <property name="text">
+                                   <string>negative</string>
+                                  </property>
+                                 </item>
+                                 <item>
+                                  <property name="text">
+                                   <string>all</string>
+                                  </property>
+                                 </item>
+                                 <item>
+                                  <property name="text">
+                                   <string>uniform</string>
+                                  </property>
+                                 </item>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QComboBox" name="cmb_MeasureSelect">
+                                 <item>
+                                  <property name="text">
+                                   <string>first</string>
+                                  </property>
+                                 </item>
+                                 <item>
+                                  <property name="text">
+                                   <string>last</string>
+                                  </property>
+                                 </item>
+                                 <item>
+                                  <property name="text">
+                                   <string>all</string>
+                                  </property>
+                                 </item>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dspb_MinScore">
+                                 <property name="decimals">
+                                  <number>2</number>
+                                 </property>
+                                 <property name="maximum">
+                                  <double>1.000000000000000</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.010000000000000</double>
+                                 </property>
+                                 <property name="value">
+                                  <double>0.350000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dspb_DistanceThreshold">
+                                 <property name="decimals">
+                                  <number>1</number>
+                                 </property>
+                                 <property name="maximum">
+                                  <double>100.000000000000000</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.100000000000000</double>
+                                 </property>
+                                 <property name="value">
+                                  <double>3.500000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                            </layout>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="tab_12">
+                     <attribute name="title">
+                      <string>结果</string>
+                     </attribute>
+                     <layout class="QGridLayout" name="gridLayout_12">
+                      <item row="0" column="0">
+                       <layout class="QVBoxLayout" name="verticalLayout_15">
+                        <item>
+                         <widget class="QGroupBox" name="groupBox_4">
+                          <property name="title">
+                           <string>直线结果</string>
+                          </property>
+                          <layout class="QGridLayout" name="gridLayout_4">
+                           <item row="0" column="0">
+                            <layout class="QHBoxLayout" name="horizontalLayout_20">
+                             <item>
+                              <layout class="QVBoxLayout" name="verticalLayout_12">
+                               <item>
+                                <widget class="QLabel" name="label_50">
+                                 <property name="text">
+                                  <string>起点Row:</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_51">
+                                 <property name="text">
+                                  <string>起点Column:</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_52">
+                                 <property name="text">
+                                  <string>终点Row:</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_53">
+                                 <property name="text">
+                                  <string>终点Column:</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                             <item>
+                              <layout class="QVBoxLayout" name="verticalLayout_5">
+                               <item>
+                                <widget class="QLineEdit" name="txt_Row1_Line">
+                                 <property name="readOnly">
+                                  <bool>true</bool>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLineEdit" name="txt_Col1_Line">
+                                 <property name="readOnly">
+                                  <bool>true</bool>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLineEdit" name="txt_Row2_Line">
+                                 <property name="readOnly">
+                                  <bool>true</bool>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLineEdit" name="txt_Col2_Line">
+                                 <property name="readOnly">
+                                  <bool>true</bool>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                            </layout>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QGroupBox" name="groupBox_7">
+                          <property name="title">
+                           <string>圆结果</string>
+                          </property>
+                          <layout class="QGridLayout" name="gridLayout_5">
+                           <item row="0" column="0">
+                            <layout class="QHBoxLayout" name="horizontalLayout_22">
+                             <item>
+                              <layout class="QVBoxLayout" name="verticalLayout_6">
+                               <item>
+                                <widget class="QLabel" name="label_55">
+                                 <property name="text">
+                                  <string>圆心Row:</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_56">
+                                 <property name="text">
+                                  <string>圆心Column:</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_57">
+                                 <property name="text">
+                                  <string>半径Radius:</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                             <item>
+                              <layout class="QVBoxLayout" name="verticalLayout_16">
+                               <item>
+                                <widget class="QLineEdit" name="txt_Row1_Circle">
+                                 <property name="readOnly">
+                                  <bool>true</bool>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLineEdit" name="txt_Col1_Circle">
+                                 <property name="readOnly">
+                                  <bool>true</bool>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLineEdit" name="txt_Radius_Circle">
+                                 <property name="readOnly">
+                                  <bool>true</bool>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                            </layout>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="1" column="0">
+                 <spacer name="verticalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_7">
+               <attribute name="title">
+                <string>工艺参数</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_21">
+                <item row="0" column="0">
+                 <layout class="QVBoxLayout" name="verticalLayout_29" stretch="1,5">
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_11">
+                    <property name="title">
+                     <string>基准绑定</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_24">
+                     <item row="0" column="0">
+                      <layout class="QVBoxLayout" name="verticalLayout_25">
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_27">
+                         <item>
+                          <layout class="QVBoxLayout" name="verticalLayout_24">
+                           <item>
+                            <widget class="QLabel" name="label_12">
+                             <property name="text">
+                              <string>Pin针区域：</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_13">
+                             <property name="text">
+                              <string>X方向基准：</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_14">
+                             <property name="text">
+                              <string>Y方向基准：</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <layout class="QVBoxLayout" name="verticalLayout_23">
+                           <item>
+                            <widget class="QComboBox" name="cmb_PinRegionBinding"/>
+                           </item>
+                           <item>
+                            <widget class="QComboBox" name="cmb_BaseXBinding"/>
+                           </item>
+                           <item>
+                            <widget class="QComboBox" name="cmb_BaseYBinding"/>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_31">
+                         <item>
+                          <widget class="QPushButton" name="pb_RefreshBinding">
+                           <property name="text">
+                            <string>刷新</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="pb_Binding">
+                           <property name="text">
+                            <string>绑定</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QTextBrowser" name="textBrowser_BindingLog"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_28" stretch="1,10">
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_18">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="2,3,1">
+                        <item>
+                         <widget class="QLabel" name="label_8">
+                          <property name="text">
+                           <string>X方向允许最大偏差：</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QDoubleSpinBox" name="dspb_Tolerance_X">
+                          <property name="decimals">
+                           <number>3</number>
+                          </property>
+                          <property name="maximum">
+                           <double>99999.000000000000000</double>
+                          </property>
+                          <property name="value">
+                           <double>1.000000000000000</double>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_19">
+                          <property name="text">
+                           <string>mm</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_34" stretch="2,3,1">
+                        <item>
+                         <widget class="QLabel" name="label_46">
+                          <property name="text">
+                           <string>Y方向允许最大偏差：</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QDoubleSpinBox" name="dspb_Tolerance_Y">
+                          <property name="decimals">
+                           <number>3</number>
+                          </property>
+                          <property name="maximum">
+                           <double>99999.000000000000000</double>
+                          </property>
+                          <property name="value">
+                           <double>1.000000000000000</double>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_58">
+                          <property name="text">
+                           <string>mm</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_36" stretch="2,3,1">
+                        <item>
+                         <widget class="QLabel" name="label_16">
+                          <property name="text">
+                           <string>像素当量：</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QDoubleSpinBox" name="dspb_MmPixel">
+                          <property name="decimals">
+                           <number>3</number>
+                          </property>
+                          <property name="maximum">
+                           <double>99999.000000000000000</double>
+                          </property>
+                          <property name="value">
+                           <double>0.010000000000000</double>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_22">
+                          <property name="text">
+                           <string>mm/pixel</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_35">
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_37">
+                          <item>
+                           <widget class="QLabel" name="label_27">
+                            <property name="text">
+                             <string>待检测Pin数量：</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QSpinBox" name="spb_PinNum">
+                            <property name="maximum">
+                             <number>99999999</number>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pb_CalculatePinNum">
+                          <property name="text">
+                           <string>计算</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_21" stretch="1,15">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_48">
+                        <item>
+                         <widget class="QPushButton" name="pb_AddValue">
+                          <property name="text">
+                           <string>添加数据</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pb_ClearValue">
+                          <property name="text">
+                           <string>清空数据</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pb_SetDefaultStandardData">
+                          <property name="text">
+                           <string>一键设置默认参数</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pb_ImportStandardData">
+                          <property name="text">
+                           <string>一键导入基准参数</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pb_SetStandardData">
+                          <property name="text">
+                           <string>参数设置</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="QTableWidget" name="tablewidget_StandardData"/>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_8">
+               <attribute name="title">
+                <string>结果</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_22">
+                <item row="0" column="0">
+                 <layout class="QVBoxLayout" name="verticalLayout_30" stretch="1,20">
+                  <property name="spacing">
+                   <number>1</number>
+                  </property>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_50" stretch="1,10,1">
+                    <item>
+                     <widget class="QLabel" name="label_59">
+                      <property name="text">
+                       <string>CSV路径：</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="lineEdit_CsvPath">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pb_CsvPath">
+                      <property name="text">
+                       <string>选择</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="QTableWidget" name="tablewidget_ResultData"/>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CMyLabel</class>
+   <extends>QLabel</extends>
+   <header>cmylabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

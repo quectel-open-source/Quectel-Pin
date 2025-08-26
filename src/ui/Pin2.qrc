@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Pin2"/>
+    <qresource prefix="/image">
+        <file>icons8-1.png</file>
+    </qresource>
+</RCC>

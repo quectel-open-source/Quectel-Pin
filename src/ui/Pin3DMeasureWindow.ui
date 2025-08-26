@@ -1,0 +1,2693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Pin3DMeasureWindowClass</class>
+ <widget class="QMainWindow" name="Pin3DMeasureWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1452</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>PinMeasureWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_17" stretch="1,20">
+      <property name="spacing">
+       <number>1</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>2</number>
+         </property>
+         <property name="topMargin">
+          <number>2</number>
+         </property>
+         <property name="rightMargin">
+          <number>2</number>
+         </property>
+         <property name="bottomMargin">
+          <number>2</number>
+         </property>
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_18" stretch="1,2,20,1">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_17" stretch="1,10">
+             <item>
+              <widget class="QLabel" name="label_112">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap>:/QtToolTest/Resources/Quectel LOGO-20220215.png</pixmap>
+               </property>
+               <property name="scaledContents">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>638</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_28" stretch="1,1,1,1">
+             <property name="spacing">
+              <number>20</number>
+             </property>
+             <item>
+              <widget class="QToolButton" name="toolButton_4">
+               <property name="font">
+                <font>
+                 <family>Times New Roman</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>设置</string>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextOnly</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButton_5">
+               <property name="font">
+                <font>
+                 <family>Times New Roman</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>日志</string>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextOnly</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButton_6">
+               <property name="font">
+                <font>
+                 <family>Liberation Serif</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>语言</string>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextOnly</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButton_7">
+               <property name="font">
+                <font>
+                 <family>Liberation Serif</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>帮助</string>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextOnly</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>678</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="1,11,0">
+             <item>
+              <widget class="QToolButton" name="toolButton">
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>:/QtToolTest/Resources/窗口最小化.png</normaloff>:/QtToolTest/Resources/窗口最小化.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>25</width>
+                 <height>25</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButton_2">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>:/QtToolTest/Resources/expand-全屏化.png</normaloff>:/QtToolTest/Resources/expand-全屏化.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>25</width>
+                 <height>25</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButton_3">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>:/QtToolTest/Resources/关闭.png</normaloff>:/QtToolTest/Resources/关闭.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>25</width>
+                 <height>25</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_43" stretch="106,60">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3" stretch="4,2">
+          <property name="spacing">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QVTKOpenGLNativeWidget" name="openGLWidget">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::PreventContextMenu</enum>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0">
+            <property name="spacing">
+             <number>1</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_33" stretch="2,1">
+              <property name="spacing">
+               <number>8</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_26">
+                <item>
+                 <widget class="QPushButton" name="pBtn_OpenCloud">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>11</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>打开点云</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pBtn_SaveCloud">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>11</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>保存点云</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pBtn_PinMeasureAlgo">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>11</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>运行</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_32">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="btn_SavePinMeasureData">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>11</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>保存参数</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_LoadPinMeasureData">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>读取参数</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <property name="spacing">
+               <number>1</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_4">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_8">
+                 <property name="leftMargin">
+                  <number>1</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>1</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>1</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>1</number>
+                 </property>
+                 <property name="spacing">
+                  <number>1</number>
+                 </property>
+                 <item row="0" column="1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="0,0,0">
+                   <item>
+                    <widget class="QPushButton" name="pBtn_ClearData">
+                     <property name="font">
+                      <font>
+                       <family>微软雅黑</family>
+                       <pointsize>11</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="layoutDirection">
+                      <enum>Qt::LeftToRight</enum>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string>清空数据</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="ckB_ShowResult">
+                     <property name="font">
+                      <font>
+                       <family>微软雅黑</family>
+                       <pointsize>10</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string>结果输出</string>
+                     </property>
+                     <property name="checked">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPlainTextEdit" name="plainTextEdit">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>定位选项</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QScrollArea" name="scrollArea">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>472</width>
+                 <height>850</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_18">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_11" stretch="59,33,51">
+                  <property name="spacing">
+                   <number>6</number>
+                  </property>
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_8">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>微软雅黑</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="title">
+                     <string>1、裁剪模块特征</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_4">
+                     <item row="0" column="0">
+                      <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="1,3">
+                       <property name="spacing">
+                        <number>1</number>
+                       </property>
+                       <item>
+                        <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,2">
+                         <property name="spacing">
+                          <number>30</number>
+                         </property>
+                         <property name="leftMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>0</number>
+                         </property>
+                         <item>
+                          <widget class="QPushButton" name="pBtn_PickCropModulePoint">
+                           <property name="font">
+                            <font>
+                             <family>微软雅黑</family>
+                             <pointsize>10</pointsize>
+                             <weight>50</weight>
+                             <bold>false</bold>
+                            </font>
+                           </property>
+                           <property name="toolTip">
+                            <string>按shift+鼠标左键点击，可选取ROI中心坐标，长宽高可实时设置观察得到最佳值，旋转角度参考点云原点坐标系。</string>
+                           </property>
+                           <property name="text">
+                            <string>设定3D-ROI参数</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="pBtn_RunCropModule">
+                           <property name="font">
+                            <font>
+                             <family>微软雅黑</family>
+                             <pointsize>10</pointsize>
+                             <weight>50</weight>
+                             <bold>false</bold>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>单步执行</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <widget class="QGroupBox" name="groupBox">
+                         <property name="font">
+                          <font>
+                           <family>微软雅黑</family>
+                           <pointsize>10</pointsize>
+                           <weight>50</weight>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="title">
+                          <string>3D-ROI</string>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_3">
+                          <item row="0" column="0">
+                           <layout class="QVBoxLayout" name="verticalLayout_13">
+                            <item>
+                             <layout class="QVBoxLayout" name="verticalLayout_12">
+                              <item>
+                               <layout class="QHBoxLayout" name="horizontalLayout">
+                                <item>
+                                 <widget class="QLabel" name="label_2">
+                                  <property name="font">
+                                   <font>
+                                    <family>微软雅黑</family>
+                                    <pointsize>10</pointsize>
+                                    <weight>50</weight>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="text">
+                                   <string>ROI中心坐标X：</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QDoubleSpinBox" name="dSpB_ROI_CenterX">
+                                  <property name="font">
+                                   <font>
+                                    <family>Times New Roman</family>
+                                    <pointsize>11</pointsize>
+                                    <weight>50</weight>
+                                    <italic>false</italic>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="suffix">
+                                   <string>mm</string>
+                                  </property>
+                                  <property name="decimals">
+                                   <number>3</number>
+                                  </property>
+                                  <property name="minimum">
+                                   <double>-9999.998999999999796</double>
+                                  </property>
+                                  <property name="maximum">
+                                   <double>9999.998999999999796</double>
+                                  </property>
+                                  <property name="singleStep">
+                                   <double>0.100000000000000</double>
+                                  </property>
+                                  <property name="stepType">
+                                   <enum>QAbstractSpinBox::DefaultStepType</enum>
+                                  </property>
+                                  <property name="value">
+                                   <double>0.000000000000000</double>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item>
+                               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                                <item>
+                                 <widget class="QLabel" name="label_3">
+                                  <property name="font">
+                                   <font>
+                                    <family>微软雅黑</family>
+                                    <pointsize>10</pointsize>
+                                    <weight>50</weight>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="text">
+                                   <string>ROI中心坐标Y：</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QDoubleSpinBox" name="dSpB_ROI_CenterY">
+                                  <property name="font">
+                                   <font>
+                                    <family>Times New Roman</family>
+                                    <pointsize>11</pointsize>
+                                    <weight>50</weight>
+                                    <italic>false</italic>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="suffix">
+                                   <string>mm</string>
+                                  </property>
+                                  <property name="decimals">
+                                   <number>3</number>
+                                  </property>
+                                  <property name="minimum">
+                                   <double>-9999.998999999999796</double>
+                                  </property>
+                                  <property name="maximum">
+                                   <double>9999.998999999999796</double>
+                                  </property>
+                                  <property name="singleStep">
+                                   <double>0.100000000000000</double>
+                                  </property>
+                                  <property name="stepType">
+                                   <enum>QAbstractSpinBox::DefaultStepType</enum>
+                                  </property>
+                                  <property name="value">
+                                   <double>0.000000000000000</double>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item>
+                               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                                <item>
+                                 <widget class="QLabel" name="label_4">
+                                  <property name="font">
+                                   <font>
+                                    <family>微软雅黑</family>
+                                    <pointsize>10</pointsize>
+                                    <weight>50</weight>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="text">
+                                   <string>ROI中心坐标Z：</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QDoubleSpinBox" name="dSpB_ROI_CenterZ">
+                                  <property name="font">
+                                   <font>
+                                    <family>Times New Roman</family>
+                                    <pointsize>11</pointsize>
+                                    <weight>50</weight>
+                                    <italic>false</italic>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="suffix">
+                                   <string>mm</string>
+                                  </property>
+                                  <property name="decimals">
+                                   <number>3</number>
+                                  </property>
+                                  <property name="minimum">
+                                   <double>-9999.998999999999796</double>
+                                  </property>
+                                  <property name="maximum">
+                                   <double>9999.998999999999796</double>
+                                  </property>
+                                  <property name="singleStep">
+                                   <double>0.100000000000000</double>
+                                  </property>
+                                  <property name="stepType">
+                                   <enum>QAbstractSpinBox::DefaultStepType</enum>
+                                  </property>
+                                  <property name="value">
+                                   <double>0.000000000000000</double>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item>
+                               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                                <item>
+                                 <widget class="QLabel" name="label_6">
+                                  <property name="font">
+                                   <font>
+                                    <family>微软雅黑</family>
+                                    <pointsize>10</pointsize>
+                                    <weight>50</weight>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="text">
+                                   <string>ROI立方体长度：</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QDoubleSpinBox" name="dSpB_ROI_LengthX">
+                                  <property name="font">
+                                   <font>
+                                    <family>Times New Roman</family>
+                                    <pointsize>11</pointsize>
+                                    <weight>50</weight>
+                                    <italic>false</italic>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="suffix">
+                                   <string>mm</string>
+                                  </property>
+                                  <property name="decimals">
+                                   <number>3</number>
+                                  </property>
+                                  <property name="minimum">
+                                   <double>0.000000000000000</double>
+                                  </property>
+                                  <property name="maximum">
+                                   <double>9999.998999999999796</double>
+                                  </property>
+                                  <property name="singleStep">
+                                   <double>0.100000000000000</double>
+                                  </property>
+                                  <property name="stepType">
+                                   <enum>QAbstractSpinBox::DefaultStepType</enum>
+                                  </property>
+                                  <property name="value">
+                                   <double>50.000000000000000</double>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item>
+                               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                                <item>
+                                 <widget class="QLabel" name="label_8">
+                                  <property name="font">
+                                   <font>
+                                    <family>微软雅黑</family>
+                                    <pointsize>10</pointsize>
+                                    <weight>50</weight>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="text">
+                                   <string>ROI立方体宽度：</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QDoubleSpinBox" name="dSpB_ROI_LengthY">
+                                  <property name="font">
+                                   <font>
+                                    <family>Times New Roman</family>
+                                    <pointsize>11</pointsize>
+                                    <weight>50</weight>
+                                    <italic>false</italic>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="suffix">
+                                   <string>mm</string>
+                                  </property>
+                                  <property name="decimals">
+                                   <number>3</number>
+                                  </property>
+                                  <property name="minimum">
+                                   <double>0.000000000000000</double>
+                                  </property>
+                                  <property name="maximum">
+                                   <double>9999.998999999999796</double>
+                                  </property>
+                                  <property name="singleStep">
+                                   <double>0.100000000000000</double>
+                                  </property>
+                                  <property name="stepType">
+                                   <enum>QAbstractSpinBox::DefaultStepType</enum>
+                                  </property>
+                                  <property name="value">
+                                   <double>50.000000000000000</double>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item>
+                               <layout class="QHBoxLayout" name="horizontalLayout_6">
+                                <item>
+                                 <widget class="QLabel" name="label_7">
+                                  <property name="font">
+                                   <font>
+                                    <family>微软雅黑</family>
+                                    <pointsize>10</pointsize>
+                                    <weight>50</weight>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="text">
+                                   <string>ROI立方体高度：</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QDoubleSpinBox" name="dSpB_ROI_LengthZ">
+                                  <property name="font">
+                                   <font>
+                                    <family>Times New Roman</family>
+                                    <pointsize>11</pointsize>
+                                    <weight>50</weight>
+                                    <italic>false</italic>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="suffix">
+                                   <string>mm</string>
+                                  </property>
+                                  <property name="decimals">
+                                   <number>3</number>
+                                  </property>
+                                  <property name="minimum">
+                                   <double>0.000000000000000</double>
+                                  </property>
+                                  <property name="maximum">
+                                   <double>9999.998999999999796</double>
+                                  </property>
+                                  <property name="singleStep">
+                                   <double>0.100000000000000</double>
+                                  </property>
+                                  <property name="stepType">
+                                   <enum>QAbstractSpinBox::DefaultStepType</enum>
+                                  </property>
+                                  <property name="value">
+                                   <double>50.000000000000000</double>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item>
+                               <layout class="QHBoxLayout" name="horizontalLayout_7">
+                                <item>
+                                 <widget class="QLabel" name="label_9">
+                                  <property name="font">
+                                   <font>
+                                    <family>微软雅黑</family>
+                                    <pointsize>10</pointsize>
+                                    <weight>50</weight>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="text">
+                                   <string>ROI立方体旋转RX：</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QDoubleSpinBox" name="dSpB_ROI_RX">
+                                  <property name="font">
+                                   <font>
+                                    <family>Times New Roman</family>
+                                    <pointsize>11</pointsize>
+                                    <weight>50</weight>
+                                    <italic>false</italic>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="suffix">
+                                   <string>°</string>
+                                  </property>
+                                  <property name="decimals">
+                                   <number>3</number>
+                                  </property>
+                                  <property name="minimum">
+                                   <double>-360.000000000000000</double>
+                                  </property>
+                                  <property name="maximum">
+                                   <double>360.000000000000000</double>
+                                  </property>
+                                  <property name="singleStep">
+                                   <double>0.100000000000000</double>
+                                  </property>
+                                  <property name="stepType">
+                                   <enum>QAbstractSpinBox::DefaultStepType</enum>
+                                  </property>
+                                  <property name="value">
+                                   <double>0.000000000000000</double>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item>
+                               <layout class="QHBoxLayout" name="horizontalLayout_9">
+                                <item>
+                                 <widget class="QLabel" name="label_10">
+                                  <property name="font">
+                                   <font>
+                                    <family>微软雅黑</family>
+                                    <pointsize>10</pointsize>
+                                    <weight>50</weight>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="text">
+                                   <string>ROI立方体旋转RY：</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QDoubleSpinBox" name="dSpB_ROI_RY">
+                                  <property name="font">
+                                   <font>
+                                    <family>Times New Roman</family>
+                                    <pointsize>11</pointsize>
+                                    <weight>50</weight>
+                                    <italic>false</italic>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="suffix">
+                                   <string>°</string>
+                                  </property>
+                                  <property name="decimals">
+                                   <number>3</number>
+                                  </property>
+                                  <property name="minimum">
+                                   <double>-360.000000000000000</double>
+                                  </property>
+                                  <property name="maximum">
+                                   <double>360.000000000000000</double>
+                                  </property>
+                                  <property name="singleStep">
+                                   <double>0.100000000000000</double>
+                                  </property>
+                                  <property name="stepType">
+                                   <enum>QAbstractSpinBox::DefaultStepType</enum>
+                                  </property>
+                                  <property name="value">
+                                   <double>0.000000000000000</double>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item>
+                               <layout class="QHBoxLayout" name="horizontalLayout_11">
+                                <item>
+                                 <widget class="QLabel" name="label_11">
+                                  <property name="font">
+                                   <font>
+                                    <family>微软雅黑</family>
+                                    <pointsize>10</pointsize>
+                                    <weight>50</weight>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="text">
+                                   <string>ROI立方体旋转RZ：</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QDoubleSpinBox" name="dSpB_ROI_RZ">
+                                  <property name="font">
+                                   <font>
+                                    <family>Times New Roman</family>
+                                    <pointsize>11</pointsize>
+                                    <weight>50</weight>
+                                    <italic>false</italic>
+                                    <bold>false</bold>
+                                   </font>
+                                  </property>
+                                  <property name="suffix">
+                                   <string>°</string>
+                                  </property>
+                                  <property name="decimals">
+                                   <number>3</number>
+                                  </property>
+                                  <property name="minimum">
+                                   <double>-360.000000000000000</double>
+                                  </property>
+                                  <property name="maximum">
+                                   <double>360.000000000000000</double>
+                                  </property>
+                                  <property name="singleStep">
+                                   <double>0.100000000000000</double>
+                                  </property>
+                                  <property name="stepType">
+                                   <enum>QAbstractSpinBox::DefaultStepType</enum>
+                                  </property>
+                                  <property name="value">
+                                   <double>0.000000000000000</double>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </item>
+                            <item>
+                             <spacer name="verticalSpacer">
+                              <property name="orientation">
+                               <enum>Qt::Vertical</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>20</width>
+                                <height>40</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_2">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>微软雅黑</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="title">
+                     <string>2、定位窗口</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_5">
+                     <item row="0" column="0">
+                      <layout class="QVBoxLayout" name="verticalLayout_7" stretch="1,1,2">
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="2,6">
+                         <property name="leftMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>0</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="label_17">
+                           <property name="font">
+                            <font>
+                             <family>微软雅黑</family>
+                             <pointsize>10</pointsize>
+                             <weight>50</weight>
+                             <bold>false</bold>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>定位选择：</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QComboBox" name="cbB_LocateMethod">
+                           <property name="font">
+                            <font>
+                             <family>微软雅黑</family>
+                             <pointsize>10</pointsize>
+                             <weight>50</weight>
+                             <bold>false</bold>
+                            </font>
+                           </property>
+                           <item>
+                            <property name="text">
+                             <string>ICP匹配定位</string>
+                            </property>
+                           </item>
+                           <item>
+                            <property name="text">
+                             <string>机械定位</string>
+                            </property>
+                           </item>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_14">
+                         <item>
+                          <widget class="QPushButton" name="pBtn_PickModel">
+                           <property name="font">
+                            <font>
+                             <family>微软雅黑</family>
+                             <pointsize>10</pointsize>
+                             <weight>50</weight>
+                             <bold>false</bold>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>选取点云模板</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="lineEdit_ModelName">
+                           <property name="font">
+                            <font>
+                             <family>微软雅黑</family>
+                             <pointsize>10</pointsize>
+                             <weight>50</weight>
+                             <bold>false</bold>
+                            </font>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_19" stretch="1,5">
+                         <item>
+                          <layout class="QVBoxLayout" name="verticalLayout_5">
+                           <item>
+                            <widget class="QPushButton" name="pBtn_RunMatchCloud">
+                             <property name="font">
+                              <font>
+                               <family>微软雅黑</family>
+                               <pointsize>10</pointsize>
+                               <weight>50</weight>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>单步执行匹配</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QCheckBox" name="ckB_PopWindowShowMatchCloud">
+                             <property name="font">
+                              <font>
+                               <family>微软雅黑</family>
+                               <pointsize>10</pointsize>
+                               <weight>50</weight>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>匹配结果可视化</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <layout class="QVBoxLayout" name="verticalLayout_6">
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_16" stretch="2,4">
+                             <property name="spacing">
+                              <number>2</number>
+                             </property>
+                             <item>
+                              <widget class="QLabel" name="label_13">
+                               <property name="font">
+                                <font>
+                                 <family>微软雅黑</family>
+                                 <pointsize>10</pointsize>
+                                 <weight>50</weight>
+                                 <bold>false</bold>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>降采样核大小：</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QDoubleSpinBox" name="dSpB_DownSamplingVoxel">
+                               <property name="font">
+                                <font>
+                                 <family>Times New Roman</family>
+                                 <pointsize>11</pointsize>
+                                 <weight>50</weight>
+                                 <bold>false</bold>
+                                </font>
+                               </property>
+                               <property name="decimals">
+                                <number>3</number>
+                               </property>
+                               <property name="maximum">
+                                <double>999999.998999999952503</double>
+                               </property>
+                               <property name="singleStep">
+                                <double>0.100000000000000</double>
+                               </property>
+                               <property name="value">
+                                <double>0.300000000000000</double>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="2,4">
+                             <item>
+                              <widget class="QLabel" name="label_14">
+                               <property name="font">
+                                <font>
+                                 <family>微软雅黑</family>
+                                 <pointsize>10</pointsize>
+                                 <weight>50</weight>
+                                 <bold>false</bold>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>迭代次数：</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QSpinBox" name="spB_MatchIterations">
+                               <property name="font">
+                                <font>
+                                 <family>Times New Roman</family>
+                                 <pointsize>11</pointsize>
+                                 <weight>50</weight>
+                                 <bold>false</bold>
+                                </font>
+                               </property>
+                               <property name="maximum">
+                                <number>99999</number>
+                               </property>
+                               <property name="value">
+                                <number>50</number>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>微软雅黑</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="title">
+                     <string>3、建立基准</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_6">
+                     <item row="0" column="0">
+                      <layout class="QVBoxLayout" name="verticalLayout_14">
+                       <item>
+                        <layout class="QVBoxLayout" name="verticalLayout_10" stretch="3,1">
+                         <item>
+                          <layout class="QVBoxLayout" name="verticalLayout_9">
+                           <property name="spacing">
+                            <number>0</number>
+                           </property>
+                           <property name="leftMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_37">
+                             <property name="spacing">
+                              <number>30</number>
+                             </property>
+                             <property name="leftMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="topMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="rightMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="bottomMargin">
+                              <number>1</number>
+                             </property>
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_31" stretch="0,2">
+                               <item>
+                                <widget class="QLabel" name="label_35">
+                                 <property name="font">
+                                  <font>
+                                   <family>微软雅黑</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="text">
+                                  <string>点一X坐标：</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dSB_BasePoint1CenterX">
+                                 <property name="font">
+                                  <font>
+                                   <family>Times New Roman</family>
+                                   <pointsize>11</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="suffix">
+                                  <string>mm</string>
+                                 </property>
+                                 <property name="decimals">
+                                  <number>3</number>
+                                 </property>
+                                 <property name="minimum">
+                                  <double>-9999.000000000000000</double>
+                                 </property>
+                                 <property name="maximum">
+                                  <double>9999.989999999999782</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.100000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_27" stretch="0,2">
+                               <property name="leftMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="topMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="rightMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="bottomMargin">
+                                <number>0</number>
+                               </property>
+                               <item>
+                                <widget class="QLabel" name="label_38">
+                                 <property name="font">
+                                  <font>
+                                   <family>微软雅黑</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="text">
+                                  <string>点二X坐标：</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dSB_BasePoint2CenterX">
+                                 <property name="font">
+                                  <font>
+                                   <family>Times New Roman</family>
+                                   <pointsize>11</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="suffix">
+                                  <string>mm</string>
+                                 </property>
+                                 <property name="decimals">
+                                  <number>3</number>
+                                 </property>
+                                 <property name="minimum">
+                                  <double>-9999.000000000000000</double>
+                                 </property>
+                                 <property name="maximum">
+                                  <double>9999.989999999999782</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.100000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_38">
+                             <property name="spacing">
+                              <number>30</number>
+                             </property>
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_34" stretch="0,2">
+                               <item>
+                                <widget class="QLabel" name="label_41">
+                                 <property name="font">
+                                  <font>
+                                   <family>微软雅黑</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="text">
+                                  <string>点一Y坐标：</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dSB_BasePoint1CenterY">
+                                 <property name="font">
+                                  <font>
+                                   <family>Times New Roman</family>
+                                   <pointsize>11</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="suffix">
+                                  <string>mm</string>
+                                 </property>
+                                 <property name="decimals">
+                                  <number>3</number>
+                                 </property>
+                                 <property name="minimum">
+                                  <double>-9999.000000000000000</double>
+                                 </property>
+                                 <property name="maximum">
+                                  <double>9999.989999999999782</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.100000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_29" stretch="0,2">
+                               <item>
+                                <widget class="QLabel" name="label_46">
+                                 <property name="font">
+                                  <font>
+                                   <family>微软雅黑</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="text">
+                                  <string>点二Y坐标：</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dSB_BasePoint2CenterY">
+                                 <property name="font">
+                                  <font>
+                                   <family>Times New Roman</family>
+                                   <pointsize>11</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="suffix">
+                                  <string>mm</string>
+                                 </property>
+                                 <property name="decimals">
+                                  <number>3</number>
+                                 </property>
+                                 <property name="minimum">
+                                  <double>-9999.000000000000000</double>
+                                 </property>
+                                 <property name="maximum">
+                                  <double>9999.989999999999782</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.100000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_39">
+                             <property name="spacing">
+                              <number>30</number>
+                             </property>
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_35" stretch="0,2">
+                               <item>
+                                <widget class="QLabel" name="label_40">
+                                 <property name="font">
+                                  <font>
+                                   <family>微软雅黑</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="text">
+                                  <string>点一Z坐标：</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dSB_BasePoint1CenterZ">
+                                 <property name="font">
+                                  <font>
+                                   <family>Times New Roman</family>
+                                   <pointsize>11</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="suffix">
+                                  <string>mm</string>
+                                 </property>
+                                 <property name="decimals">
+                                  <number>3</number>
+                                 </property>
+                                 <property name="minimum">
+                                  <double>-9999.000000000000000</double>
+                                 </property>
+                                 <property name="maximum">
+                                  <double>9999.989999999999782</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.100000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_30" stretch="0,2">
+                               <item>
+                                <widget class="QLabel" name="label_45">
+                                 <property name="font">
+                                  <font>
+                                   <family>微软雅黑</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="text">
+                                  <string>点二Z坐标：</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dSB_BasePoint2CenterZ">
+                                 <property name="font">
+                                  <font>
+                                   <family>Times New Roman</family>
+                                   <pointsize>11</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="suffix">
+                                  <string>mm</string>
+                                 </property>
+                                 <property name="decimals">
+                                  <number>3</number>
+                                 </property>
+                                 <property name="minimum">
+                                  <double>-9999.000000000000000</double>
+                                 </property>
+                                 <property name="maximum">
+                                  <double>9999.989999999999782</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.100000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_40">
+                             <property name="spacing">
+                              <number>30</number>
+                             </property>
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_23" stretch="0,2">
+                               <item>
+                                <widget class="QLabel" name="label_37">
+                                 <property name="font">
+                                  <font>
+                                   <family>微软雅黑</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="text">
+                                  <string>点三X坐标：</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dSB_BasePoint3CenterX">
+                                 <property name="font">
+                                  <font>
+                                   <family>Times New Roman</family>
+                                   <pointsize>11</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="suffix">
+                                  <string>mm</string>
+                                 </property>
+                                 <property name="decimals">
+                                  <number>3</number>
+                                 </property>
+                                 <property name="minimum">
+                                  <double>-9999.000000000000000</double>
+                                 </property>
+                                 <property name="maximum">
+                                  <double>9999.989999999999782</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.100000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_20" stretch="0,2">
+                               <item>
+                                <widget class="QLabel" name="label_36">
+                                 <property name="font">
+                                  <font>
+                                   <family>微软雅黑</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="text">
+                                  <string>点四X坐标：</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dSB_BasePoint4CenterX">
+                                 <property name="font">
+                                  <font>
+                                   <family>Times New Roman</family>
+                                   <pointsize>11</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="suffix">
+                                  <string>mm</string>
+                                 </property>
+                                 <property name="decimals">
+                                  <number>3</number>
+                                 </property>
+                                 <property name="minimum">
+                                  <double>-9999.000000000000000</double>
+                                 </property>
+                                 <property name="maximum">
+                                  <double>9999.989999999999782</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.100000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_41">
+                             <property name="spacing">
+                              <number>30</number>
+                             </property>
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_24" stretch="0,2">
+                               <item>
+                                <widget class="QLabel" name="label_43">
+                                 <property name="font">
+                                  <font>
+                                   <family>微软雅黑</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="text">
+                                  <string>点三Y坐标：</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dSB_BasePoint3CenterY">
+                                 <property name="font">
+                                  <font>
+                                   <family>Times New Roman</family>
+                                   <pointsize>11</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="suffix">
+                                  <string>mm</string>
+                                 </property>
+                                 <property name="decimals">
+                                  <number>3</number>
+                                 </property>
+                                 <property name="minimum">
+                                  <double>-9999.000000000000000</double>
+                                 </property>
+                                 <property name="maximum">
+                                  <double>9999.989999999999782</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.100000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_21" stretch="0,2">
+                               <item>
+                                <widget class="QLabel" name="label_39">
+                                 <property name="font">
+                                  <font>
+                                   <family>微软雅黑</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="text">
+                                  <string>点四Y坐标：</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dSB_BasePoint4CenterY">
+                                 <property name="font">
+                                  <font>
+                                   <family>Times New Roman</family>
+                                   <pointsize>11</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="suffix">
+                                  <string>mm</string>
+                                 </property>
+                                 <property name="decimals">
+                                  <number>3</number>
+                                 </property>
+                                 <property name="minimum">
+                                  <double>-9999.000000000000000</double>
+                                 </property>
+                                 <property name="maximum">
+                                  <double>9999.989999999999782</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.100000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_42">
+                             <property name="spacing">
+                              <number>30</number>
+                             </property>
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_25" stretch="0,2">
+                               <item>
+                                <widget class="QLabel" name="label_44">
+                                 <property name="font">
+                                  <font>
+                                   <family>微软雅黑</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="text">
+                                  <string>点三Z坐标：</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dSB_BasePoint3CenterZ">
+                                 <property name="font">
+                                  <font>
+                                   <family>Times New Roman</family>
+                                   <pointsize>11</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="suffix">
+                                  <string>mm</string>
+                                 </property>
+                                 <property name="decimals">
+                                  <number>3</number>
+                                 </property>
+                                 <property name="minimum">
+                                  <double>-9999.000000000000000</double>
+                                 </property>
+                                 <property name="maximum">
+                                  <double>9999.989999999999782</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.100000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_22" stretch="0,2">
+                               <item>
+                                <widget class="QLabel" name="label_42">
+                                 <property name="font">
+                                  <font>
+                                   <family>微软雅黑</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="text">
+                                  <string>点四Z坐标：</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QDoubleSpinBox" name="dSB_BasePoint4CenterZ">
+                                 <property name="font">
+                                  <font>
+                                   <family>Times New Roman</family>
+                                   <pointsize>11</pointsize>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="suffix">
+                                  <string>mm</string>
+                                 </property>
+                                 <property name="decimals">
+                                  <number>3</number>
+                                 </property>
+                                 <property name="minimum">
+                                  <double>-9999.000000000000000</double>
+                                 </property>
+                                 <property name="maximum">
+                                  <double>9999.989999999999782</double>
+                                 </property>
+                                 <property name="singleStep">
+                                  <double>0.100000000000000</double>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                            </layout>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_36" stretch="2,1">
+                           <property name="rightMargin">
+                            <number>9</number>
+                           </property>
+                           <item>
+                            <layout class="QVBoxLayout" name="verticalLayout_8">
+                             <item>
+                              <widget class="QPushButton" name="pBtn_PickBaseFourPoint">
+                               <property name="font">
+                                <font>
+                                 <family>微软雅黑</family>
+                                 <pointsize>10</pointsize>
+                                 <weight>50</weight>
+                                 <bold>false</bold>
+                                </font>
+                               </property>
+                               <property name="toolTip">
+                                <string>请按shift+鼠标左键点击，选取要裁剪区域的中心点</string>
+                               </property>
+                               <property name="text">
+                                <string>选基准平面四点坐标</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QPushButton" name="pBtn_RunFourPointFitPlane">
+                               <property name="font">
+                                <font>
+                                 <family>微软雅黑</family>
+                                 <pointsize>10</pointsize>
+                                 <weight>50</weight>
+                                 <bold>false</bold>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>单步执行建基准</string>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <widget class="QCheckBox" name="ckB_PopWindowShowBasePointCloud">
+                             <property name="font">
+                              <font>
+                               <family>微软雅黑</family>
+                               <pointsize>10</pointsize>
+                               <weight>50</weight>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="layoutDirection">
+                              <enum>Qt::LeftToRight</enum>
+                             </property>
+                             <property name="text">
+                              <string>基准取点可视化</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <spacer name="verticalSpacer_2">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>18</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>PIN计算</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="0" column="0">
+             <widget class="QScrollArea" name="scrollArea_2">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>489</width>
+                 <height>831</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_19">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_16" stretch="1,20,3">
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_44">
+                    <item>
+                     <widget class="QPushButton" name="pBtn_AddPinROI">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑</family>
+                        <pointsize>11</pointsize>
+                        <weight>50</weight>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>新增PIN参数</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pBtn_DeletePinROI">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑</family>
+                        <pointsize>11</pointsize>
+                        <weight>50</weight>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>删除PIN参数</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pBtn_PickCropPinPoint">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑</family>
+                        <pointsize>11</pointsize>
+                        <weight>50</weight>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="toolTip">
+                       <string>请按shift+鼠标左键点击，选取要裁剪区域的中心点</string>
+                      </property>
+                      <property name="text">
+                       <string>设置PIN-3D_ROI参数</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="QTableWidget" name="tbeW_PInParams">
+                    <property name="font">
+                     <font>
+                      <family>微软雅黑</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <row>
+                     <property name="text">
+                      <string>ROI中心X坐标：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>ROI中心Y坐标：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>ROI中心Z坐标：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>ROI长度：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>ROI宽度：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>ROI高度：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>ROI旋转RX：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>ROI旋转RY：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>ROI旋转RZ：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>降采样核大小：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>SOR滤波临近点：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>SOR滤波阈值：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>聚类阈值：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>聚类最小点数：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>聚类最大点数：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>高度标准值：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>上公差：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>下公差：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>补偿值：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>PIN针数量：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="textAlignment">
+                      <set>AlignLeading|AlignVCenter</set>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>排序：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>首位补0个数：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                    </row>
+                    <row>
+                     <property name="text">
+                      <string>尾位补0个数：</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                    </row>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_15">
+                    <item>
+                     <widget class="QPushButton" name="pBtn_RunPinCal">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑</family>
+                        <pointsize>11</pointsize>
+                        <weight>50</weight>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="toolTip">
+                       <string>请按shift+鼠标左键点击，选取要裁剪区域的中心点</string>
+                      </property>
+                      <property name="text">
+                       <string>单步执行计算</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_45">
+                      <item>
+                       <widget class="QCheckBox" name="ckB_PopWindowShowCropPinCloud">
+                        <property name="font">
+                         <font>
+                          <family>微软雅黑</family>
+                          <pointsize>11</pointsize>
+                          <weight>50</weight>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>弹窗显示裁剪</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="ckB_PopWindowShowPinSORCloud">
+                        <property name="font">
+                         <font>
+                          <family>微软雅黑</family>
+                          <pointsize>11</pointsize>
+                          <weight>50</weight>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>弹窗显示滤波</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_46">
+                      <item>
+                       <widget class="QCheckBox" name="ckB_PopWindowShowPinDownCloud">
+                        <property name="font">
+                         <font>
+                          <family>微软雅黑</family>
+                          <pointsize>11</pointsize>
+                          <weight>50</weight>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>弹窗显示采样</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="ckB_PopWindowShowPinClusterCloud">
+                        <property name="font">
+                         <font>
+                          <family>微软雅黑</family>
+                          <pointsize>11</pointsize>
+                          <weight>50</weight>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>弹窗显示聚类</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKOpenGLNativeWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">QVTKOpenGLNativeWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
