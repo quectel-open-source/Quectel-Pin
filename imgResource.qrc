@@ -1,0 +1,60 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/icons8-首页-48.png</file>
+        <file>icons/icons8-browse-page-48.png</file>
+        <file>icons/icons8-open-lock-48.png</file>
+        <file>icons/icons8-保存-48.png</file>
+        <file>icons/icons8-编辑图像-48.png</file>
+        <file>icons/icons8-插入-48.png</file>
+        <file>icons/icons8-瓷砖-48.png</file>
+        <file>icons/icons8-大写锁定开启-48.png</file>
+        <file>icons/icons8-翻倍-48.png</file>
+        <file>icons/icons8-服务-48.png</file>
+        <file>icons/icons8-复选标记-48.png</file>
+        <file>icons/icons8-更新左旋转-48.png</file>
+        <file>icons/icons8-加法-48.png</file>
+        <file>icons/icons8-接受数据库-48.png</file>
+        <file>icons/icons8-结束-48.png</file>
+        <file>icons/icons8-开始-48.png</file>
+        <file>icons/icons8-垃圾-48.png</file>
+        <file>icons/icons8-删除-48.png</file>
+        <file>icons/icons8-时钟-48.png</file>
+        <file>icons/icons8-视频电话-48.png</file>
+        <file>icons/icons8-双降-48.png</file>
+        <file>icons/icons8-双右-48.png</file>
+        <file>icons/icons8-双左-48.png</file>
+        <file>icons/icons8-锁-48.png</file>
+        <file>icons/icons8-停止-48.png</file>
+        <file>icons/icons8-相机-48.png</file>
+        <file>icons/icons8-向左旋转-48.png</file>
+        <file>icons/icons8-新增文件夹-48.png</file>
+        <file>icons/icons8-信息-48.png</file>
+        <file>icons/icons8-照片栈-48.png</file>
+        <file>icons/icons8-指向厚实的箭头-48.png</file>
+        <file>icons/icons8-指向下来的厚实的箭头-48.png</file>
+        <file>icons/icons8-中心方向-48.png</file>
+        <file>icons/icons8-停止-48red.png</file>
+        <file>icons/icons8-向右旋转-48.png</file>
+        <file>icons/icons8-重复-48.png</file>
+        <file>icons/icons8-连接的-48.png</file>
+        <file>icons/icons8-设置-48.png</file>
+        <file>icons/icons8-下载-48.png</file>
+        <file>icons/icons8-版本-60.png</file>
+        <file>icons/icons8-还原-60.png</file>
+        <file>icons/icons8-用户-48.png</file>
+        <file>icons/Min.png</file>
+        <file>icons/close.png</file>
+        <file>icons/Max.png</file>
+        <file>icons/jiangzhun.png</file>
+        <file>icons/ng.png</file>
+        <file>icons/ok.png</file>
+        <file>icons/icons8-警告-64.png</file>
+        <file>icons/icons8-接受数据库-48 - 副本.png</file>
+        <file>icons/icons8-相机-48 - 副本.png</file>
+        <file>icons/icons8-瓷砖-48 - 副本.png</file>
+        <file>icons/icons8-browse-page-48 - 副本.png</file>
+        <file>icons/易鼎丰.png</file>
+        <file>icons/icons8-笔记-64.png</file>
+        <file>icons/icon.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug2|x64">
+      <Configuration>Debug2</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{183591D2-D6E8-48F5-9D55-71DBB31A6892}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)'=='Debug2|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug2|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>5.15.2_msvc2019_64</QtInstall>
+    <QtModules>core;gui;widgets;concurrent;charts</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>5.15.2_msvc2019_64</QtInstall>
+    <QtModules>core;sql;network;gui;widgets;serialport;printsupport;concurrent;serialbus;charts</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug2|x64'" Label="QtSettings">
+    <QtInstall>5.15.2_msvc2019_64</QtInstall>
+    <QtModules>core;sql;network;gui;widgets;serialport;printsupport;concurrent;serialbus;charts</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug2|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\app</OutDir>
+    <IncludePath>..\..\datas\halcon\include;..\..\data;..\..\Qlog;..\..\Log;..\..\dataTranfer;..\..\datas\OpenCV\include;..\..\datas\PCL1.9.1\include;..\..\datas\PCL1.9.1\include\pcl-1.9;..\..\datas\PCL1.9.1\3rdParty\Boost\include\boost-1_68;..\..\datas\PCL1.9.1\3rdParty\Eigen\eigen3;..\include;..\..\datas\LVMSDK\include;..\..\datas\PCL1.9.1\3rdParty\VTK\include\vtk-8.2;..\..\datas\OpenCV\include\opencv2;..\..\datas\PCL1.9.1\3rdParty;..\..\datas\PCL1.9.1\3rdParty\OpenNI2\Include;..\..\datas\PCL1.9.1\3rdParty\Qhull\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\datas\halcon\lib\x64-win64;..\..\lib\Release;..\..\datas\PCL1.9.1\lib;..\..\datas\OpenCV\lib;..\lib;..\..\datas\PCL1.9.1\3rdParty\Boost\lib;..\..\datas\PCL1.9.1\3rdParty\VTK\lib;..\..\datas\PCL1.9.1\3rdParty\Qhull\lib;..\..\datas\PCL1.9.1\3rdParty\OpenNI2\Lib;..\..\datas\LVMSDK\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\app</OutDir>
+    <IncludePath>..\..\datas\halcon\include;..\..\data;..\..\Qlog;..\..\Log;..\..\dataTranfer;..\..\datas\OpenCV\include;..\..\datas\PCL1.9.1\include;..\..\datas\PCL1.9.1\include\pcl-1.9;..\..\datas\PCL1.9.1\3rdParty\Boost\include\boost-1_68;..\..\datas\PCL1.9.1\3rdParty\Eigen\eigen3;..\..\datas\LVMSDK\include;..\..\datas\PCL1.9.1\3rdParty\VTK\include\vtk-8.2;..\..\datas\OpenCV\include\opencv2;..\..\datas\PCL1.9.1\3rdParty;..\..\datas\PCL1.9.1\3rdParty\OpenNI2\Include;..\..\datas\MVS\Include;..\..\datas\PCL1.9.1\3rdParty\Qhull\include;src;src\ui;src\machine;src\thirdparty\include;src\style;src\thread;src\pin;src\camera;D:\test_project\pin_project\Pin2\x64\Release\qt\uic;src\vision;src\tool;..\..\datas\include;..\..\datas\JsonCpp\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\datas\halcon\lib\x64-win64;..\..\lib\Release;..\..\datas\PCL1.9.1\lib;..\..\datas\OpenCV\lib;..\..\datas\PCL1.9.1\3rdParty\Boost\lib;..\..\datas\PCL1.9.1\3rdParty\VTK\lib;..\..\datas\PCL1.9.1\3rdParty\Qhull\lib;..\..\datas\PCL1.9.1\3rdParty\OpenNI2\Lib;..\..\datas\LVMSDK\lib;..\..\datas\MVS\lib;src\thirdparty\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>Qvision</TargetName>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug2|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\app</OutDir>
+    <IncludePath>..\..\datas\halcon\include;..\..\data;..\..\Qlog;..\..\Log;..\..\dataTranfer;..\..\datas\OpenCV\include;..\..\datas\PCL1.9.1\include;..\..\datas\PCL1.9.1\include\pcl-1.9;..\..\datas\PCL1.9.1\3rdParty\Boost\include\boost-1_68;..\..\datas\PCL1.9.1\3rdParty\Eigen\eigen3;..\..\datas\LVMSDK\include;..\..\datas\PCL1.9.1\3rdParty\VTK\include\vtk-8.2;..\..\datas\OpenCV\include\opencv2;..\..\datas\PCL1.9.1\3rdParty;..\..\datas\PCL1.9.1\3rdParty\OpenNI2\Include;..\..\datas\MVS\Include;..\..\datas\PCL1.9.1\3rdParty\Qhull\include;src;src\ui;src\machine;src\thirdparty\include;src\style;src\thread;src\pin;src\camera;D:\test_project\pin_project\Pin2\x64\Release\qt\uic;src\vision;src\tool;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\datas\halcon\lib\x64-win64;..\..\lib\Release;..\..\datas\PCL1.9.1\lib;..\..\datas\OpenCV\lib;..\lib;..\..\datas\PCL1.9.1\3rdParty\Boost\lib;..\..\datas\PCL1.9.1\3rdParty\VTK\lib;..\..\datas\PCL1.9.1\3rdParty\Qhull\lib;..\..\datas\PCL1.9.1\3rdParty\OpenNI2\Lib;..\..\datas\LVMSDK\lib;..\..\datas\MVS\lib;src\thirdparty\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>Qvision</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalDependencies>halcon.lib;halconcpp.lib;data.lib;QLog.lib;pcl_io_release.lib;dataTranfer.lib;opencv_world453.lib;Pin.lib;libboost_thread-vc141-mt-x64-1_68.lib;pcl_common_release.lib;pcl_features_release.lib;pcl_filters_release.lib;pcl_io_ply_release.lib;pcl_kdtree_release.lib;pcl_keypoints_release.lib;pcl_ml_release.lib;pcl_octree_release.lib;pcl_outofcore_release.lib;pcl_people_release.lib;pcl_recognition_release.lib;pcl_registration_release.lib;pcl_sample_consensus_release.lib;pcl_search_release.lib;pcl_segmentation_release.lib;pcl_stereo_release.lib;pcl_surface_release.lib;pcl_tracking_release.lib;pcl_visualization_release.lib;libboost_atomic-vc141-mt-x64-1_68.lib;libboost_bzip2-vc141-mt-x64-1_68.lib;libboost_chrono-vc141-mt-x64-1_68.lib;libboost_container-vc141-mt-x64-1_68.lib;libboost_context-vc141-mt-x64-1_68.lib;libboost_contract-vc141-mt-x64-1_68.lib;libboost_coroutine-vc141-mt-x64-1_68.lib;libboost_date_time-vc141-mt-x64-1_68.lib;libboost_exception-vc141-mt-x64-1_68.lib;libboost_fiber-vc141-mt-x64-1_68.lib;libboost_filesystem-vc141-mt-x64-1_68.lib;libboost_graph-vc141-mt-x64-1_68.lib;libboost_graph_parallel-vc141-mt-x64-1_68.lib;libboost_iostreams-vc141-mt-x64-1_68.lib;libboost_locale-vc141-mt-x64-1_68.lib;libboost_log-vc141-mt-x64-1_68.lib;libboost_log_setup-vc141-mt-x64-1_68.lib;libboost_math_c99-vc141-mt-x64-1_68.lib;libboost_math_c99f-vc141-mt-x64-1_68.lib;libboost_math_c99l-vc141-mt-x64-1_68.lib;libboost_math_tr1-vc141-mt-x64-1_68.lib;libboost_math_tr1f-vc141-mt-x64-1_68.lib;libboost_math_tr1l-vc141-mt-x64-1_68.lib;libboost_mpi-vc141-mt-x64-1_68.lib;libboost_numpy27-vc141-mt-x64-1_68.lib;libboost_numpy37-vc141-mt-x64-1_68.lib;libboost_prg_exec_monitor-vc141-mt-x64-1_68.lib;libboost_program_options-vc141-mt-x64-1_68.lib;libboost_python27-vc141-mt-x64-1_68.lib;libboost_python37-vc141-mt-x64-1_68.lib;libboost_random-vc141-mt-x64-1_68.lib;libboost_regex-vc141-mt-x64-1_68.lib;libboost_serialization-vc141-mt-x64-1_68.lib;libboost_signals-vc141-mt-x64-1_68.lib;libboost_stacktrace_noop-vc141-mt-x64-1_68.lib;libboost_stacktrace_windbg-vc141-mt-x64-1_68.lib;libboost_stacktrace_windbg_cached-vc141-mt-x64-1_68.lib;libboost_system-vc141-mt-x64-1_68.lib;libboost_test_exec_monitor-vc141-mt-x64-1_68.lib;libboost_timer-vc141-mt-x64-1_68.lib;libboost_type_erasure-vc141-mt-x64-1_68.lib;libboost_unit_test_framework-vc141-mt-x64-1_68.lib;libboost_wave-vc141-mt-x64-1_68.lib;libboost_wserialization-vc141-mt-x64-1_68.lib;libboost_zlib-vc141-mt-x64-1_68.lib;OpenNI2.lib;qhull.lib;qhull_p.lib;qhull_r.lib;qhullcpp.lib;qhullstatic.lib;qhullstatic_r.lib;vtkChartsCore-8.2.lib;vtkCommonColor-8.2.lib;vtkCommonComputationalGeometry-8.2.lib;vtkCommonCore-8.2.lib;vtkCommonDataModel-8.2.lib;vtkCommonExecutionModel-8.2.lib;vtkCommonMath-8.2.lib;vtkCommonMisc-8.2.lib;vtkCommonSystem-8.2.lib;vtkCommonTransforms-8.2.lib;vtkDICOMParser-8.2.lib;vtkDomainsChemistry-8.2.lib;vtkDomainsChemistryOpenGL2-8.2.lib;vtkdoubleconversion-8.2.lib;vtkexodusII-8.2.lib;vtkexpat-8.2.lib;vtkFiltersAMR-8.2.lib;vtkFiltersCore-8.2.lib;vtkFiltersExtraction-8.2.lib;vtkFiltersFlowPaths-8.2.lib;vtkFiltersGeneral-8.2.lib;vtkFiltersGeneric-8.2.lib;vtkFiltersGeometry-8.2.lib;vtkFiltersHybrid-8.2.lib;vtkFiltersHyperTree-8.2.lib;vtkFiltersImaging-8.2.lib;vtkFiltersModeling-8.2.lib;vtkFiltersParallel-8.2.lib;vtkFiltersParallelImaging-8.2.lib;vtkFiltersPoints-8.2.lib;vtkFiltersProgrammable-8.2.lib;vtkFiltersSelection-8.2.lib;vtkFiltersSMP-8.2.lib;vtkFiltersSources-8.2.lib;vtkFiltersStatistics-8.2.lib;vtkFiltersTexture-8.2.lib;vtkFiltersTopology-8.2.lib;vtkFiltersVerdict-8.2.lib;vtkfreetype-8.2.lib;vtkGeovisCore-8.2.lib;vtkgl2ps-8.2.lib;vtkglew-8.2.lib;vtkGUISupportMFC-8.2.lib;vtkGUISupportQt-8.2.lib;vtkGUISupportQtOpenGL-8.2.lib;vtkGUISupportQtSQL-8.2.lib;vtkhdf5-8.2.lib;vtkhdf5_hl-8.2.lib;vtkImagingColor-8.2.lib;vtkImagingCore-8.2.lib;vtkImagingFourier-8.2.lib;vtkImagingGeneral-8.2.lib;vtkImagingHybrid-8.2.lib;vtkImagingMath-8.2.lib;vtkImagingMorphological-8.2.lib;vtkImagingSources-8.2.lib;vtkImagingStatistics-8.2.lib;vtkImagingStencil-8.2.lib;vtkInfovisCore-8.2.lib;vtkInfovisLayout-8.2.lib;vtkInteractionImage-8.2.lib;vtkInteractionStyle-8.2.lib;vtkInteractionWidgets-8.2.lib;vtkIOAMR-8.2.lib;vtkIOAsynchronous-8.2.lib;vtkIOCityGML-8.2.lib;vtkIOCore-8.2.lib;vtkIOEnSight-8.2.lib;vtkIOExodus-8.2.lib;vtkIOExport-8.2.lib;vtkIOExportOpenGL2-8.2.lib;vtkIOExportPDF-8.2.lib;vtkIOGeometry-8.2.lib;vtkIOImage-8.2.lib;vtkIOImport-8.2.lib;vtkIOInfovis-8.2.lib;vtkIOLegacy-8.2.lib;vtkIOLSDyna-8.2.lib;vtkIOMINC-8.2.lib;vtkIOMovie-8.2.lib;vtkIONetCDF-8.2.lib;vtkIOParallel-8.2.lib;vtkIOParallelXML-8.2.lib;vtkIOPLY-8.2.lib;vtkIOSegY-8.2.lib;vtkIOSQL-8.2.lib;vtkIOTecplotTable-8.2.lib;vtkIOVeraOut-8.2.lib;vtkIOVideo-8.2.lib;vtkIOXML-8.2.lib;vtkIOXMLParser-8.2.lib;vtkjpeg-8.2.lib;vtkjsoncpp-8.2.lib;vtklibharu-8.2.lib;vtklibxml2-8.2.lib;vtkLocalExample-8.2.lib;vtklz4-8.2.lib;vtklzma-8.2.lib;vtkmetaio-8.2.lib;vtkNetCDF-8.2.lib;vtkogg-8.2.lib;vtkParallelCore-8.2.lib;vtkpng-8.2.lib;vtkproj-8.2.lib;vtkpugixml-8.2.lib;vtkRenderingAnnotation-8.2.lib;vtkRenderingContext2D-8.2.lib;vtkRenderingContextOpenGL2-8.2.lib;vtkRenderingCore-8.2.lib;vtkRenderingExternal-8.2.lib;vtkRenderingFreeType-8.2.lib;vtkRenderingGL2PSOpenGL2-8.2.lib;vtkRenderingImage-8.2.lib;vtkRenderingLabel-8.2.lib;vtkRenderingLOD-8.2.lib;vtkRenderingOpenGL2-8.2.lib;vtkRenderingQt-8.2.lib;vtkRenderingVolume-8.2.lib;vtkRenderingVolumeOpenGL2-8.2.lib;vtksqlite-8.2.lib;vtksys-8.2.lib;vtktheora-8.2.lib;vtktiff-8.2.lib;vtkverdict-8.2.lib;vtkViewsContext2D-8.2.lib;vtkViewsCore-8.2.lib;vtkViewsInfovis-8.2.lib;vtkViewsQt-8.2.lib;vtkzlib-8.2.lib;nvt_lvm_sdk.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>_SILENCE_FPOS_SEEKPOS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalDependencies>halcon.lib;halconcpp.lib;data.lib;QLog.lib;pcl_io_release.lib;dataTranfer.lib;opencv_world453.lib;Pin.lib;libboost_thread-vc141-mt-x64-1_68.lib;pcl_common_release.lib;pcl_features_release.lib;pcl_filters_release.lib;pcl_io_ply_release.lib;pcl_kdtree_release.lib;pcl_keypoints_release.lib;pcl_ml_release.lib;pcl_octree_release.lib;pcl_outofcore_release.lib;pcl_people_release.lib;pcl_recognition_release.lib;pcl_registration_release.lib;pcl_sample_consensus_release.lib;pcl_search_release.lib;pcl_segmentation_release.lib;pcl_stereo_release.lib;pcl_surface_release.lib;pcl_tracking_release.lib;pcl_visualization_release.lib;libboost_atomic-vc141-mt-x64-1_68.lib;libboost_bzip2-vc141-mt-x64-1_68.lib;libboost_chrono-vc141-mt-x64-1_68.lib;libboost_container-vc141-mt-x64-1_68.lib;libboost_context-vc141-mt-x64-1_68.lib;libboost_contract-vc141-mt-x64-1_68.lib;libboost_coroutine-vc141-mt-x64-1_68.lib;libboost_date_time-vc141-mt-x64-1_68.lib;libboost_exception-vc141-mt-x64-1_68.lib;libboost_fiber-vc141-mt-x64-1_68.lib;libboost_filesystem-vc141-mt-x64-1_68.lib;libboost_graph-vc141-mt-x64-1_68.lib;libboost_graph_parallel-vc141-mt-x64-1_68.lib;libboost_iostreams-vc141-mt-x64-1_68.lib;libboost_locale-vc141-mt-x64-1_68.lib;libboost_log-vc141-mt-x64-1_68.lib;libboost_log_setup-vc141-mt-x64-1_68.lib;libboost_math_c99-vc141-mt-x64-1_68.lib;libboost_math_c99f-vc141-mt-x64-1_68.lib;libboost_math_c99l-vc141-mt-x64-1_68.lib;libboost_math_tr1-vc141-mt-x64-1_68.lib;libboost_math_tr1f-vc141-mt-x64-1_68.lib;libboost_math_tr1l-vc141-mt-x64-1_68.lib;libboost_mpi-vc141-mt-x64-1_68.lib;libboost_numpy27-vc141-mt-x64-1_68.lib;libboost_numpy37-vc141-mt-x64-1_68.lib;libboost_prg_exec_monitor-vc141-mt-x64-1_68.lib;libboost_program_options-vc141-mt-x64-1_68.lib;libboost_python27-vc141-mt-x64-1_68.lib;libboost_python37-vc141-mt-x64-1_68.lib;libboost_random-vc141-mt-x64-1_68.lib;libboost_regex-vc141-mt-x64-1_68.lib;libboost_serialization-vc141-mt-x64-1_68.lib;libboost_signals-vc141-mt-x64-1_68.lib;libboost_stacktrace_noop-vc141-mt-x64-1_68.lib;libboost_stacktrace_windbg-vc141-mt-x64-1_68.lib;libboost_stacktrace_windbg_cached-vc141-mt-x64-1_68.lib;libboost_system-vc141-mt-x64-1_68.lib;libboost_test_exec_monitor-vc141-mt-x64-1_68.lib;libboost_timer-vc141-mt-x64-1_68.lib;libboost_type_erasure-vc141-mt-x64-1_68.lib;libboost_unit_test_framework-vc141-mt-x64-1_68.lib;libboost_wave-vc141-mt-x64-1_68.lib;libboost_wserialization-vc141-mt-x64-1_68.lib;libboost_zlib-vc141-mt-x64-1_68.lib;OpenNI2.lib;qhull.lib;qhull_p.lib;qhull_r.lib;qhullcpp.lib;qhullstatic.lib;qhullstatic_r.lib;vtkChartsCore-8.2.lib;vtkCommonColor-8.2.lib;vtkCommonComputationalGeometry-8.2.lib;vtkCommonCore-8.2.lib;vtkCommonDataModel-8.2.lib;vtkCommonExecutionModel-8.2.lib;vtkCommonMath-8.2.lib;vtkCommonMisc-8.2.lib;vtkCommonSystem-8.2.lib;vtkCommonTransforms-8.2.lib;vtkDICOMParser-8.2.lib;vtkDomainsChemistry-8.2.lib;vtkDomainsChemistryOpenGL2-8.2.lib;vtkdoubleconversion-8.2.lib;vtkexodusII-8.2.lib;vtkexpat-8.2.lib;vtkFiltersAMR-8.2.lib;vtkFiltersCore-8.2.lib;vtkFiltersExtraction-8.2.lib;vtkFiltersFlowPaths-8.2.lib;vtkFiltersGeneral-8.2.lib;vtkFiltersGeneric-8.2.lib;vtkFiltersGeometry-8.2.lib;vtkFiltersHybrid-8.2.lib;vtkFiltersHyperTree-8.2.lib;vtkFiltersImaging-8.2.lib;vtkFiltersModeling-8.2.lib;vtkFiltersParallel-8.2.lib;vtkFiltersParallelImaging-8.2.lib;vtkFiltersPoints-8.2.lib;vtkFiltersProgrammable-8.2.lib;vtkFiltersSelection-8.2.lib;vtkFiltersSMP-8.2.lib;vtkFiltersSources-8.2.lib;vtkFiltersStatistics-8.2.lib;vtkFiltersTexture-8.2.lib;vtkFiltersTopology-8.2.lib;vtkFiltersVerdict-8.2.lib;vtkfreetype-8.2.lib;vtkGeovisCore-8.2.lib;vtkgl2ps-8.2.lib;vtkglew-8.2.lib;vtkGUISupportMFC-8.2.lib;vtkGUISupportQt-8.2.lib;vtkGUISupportQtOpenGL-8.2.lib;vtkGUISupportQtSQL-8.2.lib;vtkhdf5-8.2.lib;vtkhdf5_hl-8.2.lib;vtkImagingColor-8.2.lib;vtkImagingCore-8.2.lib;vtkImagingFourier-8.2.lib;vtkImagingGeneral-8.2.lib;vtkImagingHybrid-8.2.lib;vtkImagingMath-8.2.lib;vtkImagingMorphological-8.2.lib;vtkImagingSources-8.2.lib;vtkImagingStatistics-8.2.lib;vtkImagingStencil-8.2.lib;vtkInfovisCore-8.2.lib;vtkInfovisLayout-8.2.lib;vtkInteractionImage-8.2.lib;vtkInteractionStyle-8.2.lib;vtkInteractionWidgets-8.2.lib;vtkIOAMR-8.2.lib;vtkIOAsynchronous-8.2.lib;vtkIOCityGML-8.2.lib;vtkIOCore-8.2.lib;vtkIOEnSight-8.2.lib;vtkIOExodus-8.2.lib;vtkIOExport-8.2.lib;vtkIOExportOpenGL2-8.2.lib;vtkIOExportPDF-8.2.lib;vtkIOGeometry-8.2.lib;vtkIOImage-8.2.lib;vtkIOImport-8.2.lib;vtkIOInfovis-8.2.lib;vtkIOLegacy-8.2.lib;vtkIOLSDyna-8.2.lib;vtkIOMINC-8.2.lib;vtkIOMovie-8.2.lib;vtkIONetCDF-8.2.lib;vtkIOParallel-8.2.lib;vtkIOParallelXML-8.2.lib;vtkIOPLY-8.2.lib;vtkIOSegY-8.2.lib;vtkIOSQL-8.2.lib;vtkIOTecplotTable-8.2.lib;vtkIOVeraOut-8.2.lib;vtkIOVideo-8.2.lib;vtkIOXML-8.2.lib;vtkIOXMLParser-8.2.lib;vtkjpeg-8.2.lib;vtkjsoncpp-8.2.lib;vtklibharu-8.2.lib;vtklibxml2-8.2.lib;vtkLocalExample-8.2.lib;vtklz4-8.2.lib;vtklzma-8.2.lib;vtkmetaio-8.2.lib;vtkNetCDF-8.2.lib;vtkogg-8.2.lib;vtkParallelCore-8.2.lib;vtkpng-8.2.lib;vtkproj-8.2.lib;vtkpugixml-8.2.lib;vtkRenderingAnnotation-8.2.lib;vtkRenderingContext2D-8.2.lib;vtkRenderingContextOpenGL2-8.2.lib;vtkRenderingCore-8.2.lib;vtkRenderingExternal-8.2.lib;vtkRenderingFreeType-8.2.lib;vtkRenderingGL2PSOpenGL2-8.2.lib;vtkRenderingImage-8.2.lib;vtkRenderingLabel-8.2.lib;vtkRenderingLOD-8.2.lib;vtkRenderingOpenGL2-8.2.lib;vtkRenderingQt-8.2.lib;vtkRenderingVolume-8.2.lib;vtkRenderingVolumeOpenGL2-8.2.lib;vtksqlite-8.2.lib;vtksys-8.2.lib;vtktheora-8.2.lib;vtktiff-8.2.lib;vtkverdict-8.2.lib;vtkViewsContext2D-8.2.lib;vtkViewsCore-8.2.lib;vtkViewsInfovis-8.2.lib;vtkViewsQt-8.2.lib;vtkzlib-8.2.lib;nvt_lvm_sdk.lib;LTDMC.lib;MvCameraControl.lib;modbus.lib;Dmc1000.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>_SILENCE_FPOS_SEEKPOS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>MaxSpeed</Optimization>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <AdditionalIncludeDirectories>D:\test_project\pin_project\Pin2\x64\Release\qt\uic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>editbin /subsystem:console $(OutDir)\$(TargetName).exe</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug2|x64'">
+    <Link>
+      <AdditionalDependencies>halcon.lib;halconcpp.lib;data.lib;QLog.lib;pcl_io_release.lib;dataTranfer.lib;opencv_world453.lib;Pin.lib;libboost_thread-vc141-mt-x64-1_68.lib;pcl_common_release.lib;pcl_features_release.lib;pcl_filters_release.lib;pcl_io_ply_release.lib;pcl_kdtree_release.lib;pcl_keypoints_release.lib;pcl_ml_release.lib;pcl_octree_release.lib;pcl_outofcore_release.lib;pcl_people_release.lib;pcl_recognition_release.lib;pcl_registration_release.lib;pcl_sample_consensus_release.lib;pcl_search_release.lib;pcl_segmentation_release.lib;pcl_stereo_release.lib;pcl_surface_release.lib;pcl_tracking_release.lib;pcl_visualization_release.lib;libboost_atomic-vc141-mt-x64-1_68.lib;libboost_bzip2-vc141-mt-x64-1_68.lib;libboost_chrono-vc141-mt-x64-1_68.lib;libboost_container-vc141-mt-x64-1_68.lib;libboost_context-vc141-mt-x64-1_68.lib;libboost_contract-vc141-mt-x64-1_68.lib;libboost_coroutine-vc141-mt-x64-1_68.lib;libboost_date_time-vc141-mt-x64-1_68.lib;libboost_exception-vc141-mt-x64-1_68.lib;libboost_fiber-vc141-mt-x64-1_68.lib;libboost_filesystem-vc141-mt-x64-1_68.lib;libboost_graph-vc141-mt-x64-1_68.lib;libboost_graph_parallel-vc141-mt-x64-1_68.lib;libboost_iostreams-vc141-mt-x64-1_68.lib;libboost_locale-vc141-mt-x64-1_68.lib;libboost_log-vc141-mt-x64-1_68.lib;libboost_log_setup-vc141-mt-x64-1_68.lib;libboost_math_c99-vc141-mt-x64-1_68.lib;libboost_math_c99f-vc141-mt-x64-1_68.lib;libboost_math_c99l-vc141-mt-x64-1_68.lib;libboost_math_tr1-vc141-mt-x64-1_68.lib;libboost_math_tr1f-vc141-mt-x64-1_68.lib;libboost_math_tr1l-vc141-mt-x64-1_68.lib;libboost_mpi-vc141-mt-x64-1_68.lib;libboost_numpy27-vc141-mt-x64-1_68.lib;libboost_numpy37-vc141-mt-x64-1_68.lib;libboost_prg_exec_monitor-vc141-mt-x64-1_68.lib;libboost_program_options-vc141-mt-x64-1_68.lib;libboost_python27-vc141-mt-x64-1_68.lib;libboost_python37-vc141-mt-x64-1_68.lib;libboost_random-vc141-mt-x64-1_68.lib;libboost_regex-vc141-mt-x64-1_68.lib;libboost_serialization-vc141-mt-x64-1_68.lib;libboost_signals-vc141-mt-x64-1_68.lib;libboost_stacktrace_noop-vc141-mt-x64-1_68.lib;libboost_stacktrace_windbg-vc141-mt-x64-1_68.lib;libboost_stacktrace_windbg_cached-vc141-mt-x64-1_68.lib;libboost_system-vc141-mt-x64-1_68.lib;libboost_test_exec_monitor-vc141-mt-x64-1_68.lib;libboost_timer-vc141-mt-x64-1_68.lib;libboost_type_erasure-vc141-mt-x64-1_68.lib;libboost_unit_test_framework-vc141-mt-x64-1_68.lib;libboost_wave-vc141-mt-x64-1_68.lib;libboost_wserialization-vc141-mt-x64-1_68.lib;libboost_zlib-vc141-mt-x64-1_68.lib;OpenNI2.lib;qhull.lib;qhull_p.lib;qhull_r.lib;qhullcpp.lib;qhullstatic.lib;qhullstatic_r.lib;vtkChartsCore-8.2.lib;vtkCommonColor-8.2.lib;vtkCommonComputationalGeometry-8.2.lib;vtkCommonCore-8.2.lib;vtkCommonDataModel-8.2.lib;vtkCommonExecutionModel-8.2.lib;vtkCommonMath-8.2.lib;vtkCommonMisc-8.2.lib;vtkCommonSystem-8.2.lib;vtkCommonTransforms-8.2.lib;vtkDICOMParser-8.2.lib;vtkDomainsChemistry-8.2.lib;vtkDomainsChemistryOpenGL2-8.2.lib;vtkdoubleconversion-8.2.lib;vtkexodusII-8.2.lib;vtkexpat-8.2.lib;vtkFiltersAMR-8.2.lib;vtkFiltersCore-8.2.lib;vtkFiltersExtraction-8.2.lib;vtkFiltersFlowPaths-8.2.lib;vtkFiltersGeneral-8.2.lib;vtkFiltersGeneric-8.2.lib;vtkFiltersGeometry-8.2.lib;vtkFiltersHybrid-8.2.lib;vtkFiltersHyperTree-8.2.lib;vtkFiltersImaging-8.2.lib;vtkFiltersModeling-8.2.lib;vtkFiltersParallel-8.2.lib;vtkFiltersParallelImaging-8.2.lib;vtkFiltersPoints-8.2.lib;vtkFiltersProgrammable-8.2.lib;vtkFiltersSelection-8.2.lib;vtkFiltersSMP-8.2.lib;vtkFiltersSources-8.2.lib;vtkFiltersStatistics-8.2.lib;vtkFiltersTexture-8.2.lib;vtkFiltersTopology-8.2.lib;vtkFiltersVerdict-8.2.lib;vtkfreetype-8.2.lib;vtkGeovisCore-8.2.lib;vtkgl2ps-8.2.lib;vtkglew-8.2.lib;vtkGUISupportMFC-8.2.lib;vtkGUISupportQt-8.2.lib;vtkGUISupportQtOpenGL-8.2.lib;vtkGUISupportQtSQL-8.2.lib;vtkhdf5-8.2.lib;vtkhdf5_hl-8.2.lib;vtkImagingColor-8.2.lib;vtkImagingCore-8.2.lib;vtkImagingFourier-8.2.lib;vtkImagingGeneral-8.2.lib;vtkImagingHybrid-8.2.lib;vtkImagingMath-8.2.lib;vtkImagingMorphological-8.2.lib;vtkImagingSources-8.2.lib;vtkImagingStatistics-8.2.lib;vtkImagingStencil-8.2.lib;vtkInfovisCore-8.2.lib;vtkInfovisLayout-8.2.lib;vtkInteractionImage-8.2.lib;vtkInteractionStyle-8.2.lib;vtkInteractionWidgets-8.2.lib;vtkIOAMR-8.2.lib;vtkIOAsynchronous-8.2.lib;vtkIOCityGML-8.2.lib;vtkIOCore-8.2.lib;vtkIOEnSight-8.2.lib;vtkIOExodus-8.2.lib;vtkIOExport-8.2.lib;vtkIOExportOpenGL2-8.2.lib;vtkIOExportPDF-8.2.lib;vtkIOGeometry-8.2.lib;vtkIOImage-8.2.lib;vtkIOImport-8.2.lib;vtkIOInfovis-8.2.lib;vtkIOLegacy-8.2.lib;vtkIOLSDyna-8.2.lib;vtkIOMINC-8.2.lib;vtkIOMovie-8.2.lib;vtkIONetCDF-8.2.lib;vtkIOParallel-8.2.lib;vtkIOParallelXML-8.2.lib;vtkIOPLY-8.2.lib;vtkIOSegY-8.2.lib;vtkIOSQL-8.2.lib;vtkIOTecplotTable-8.2.lib;vtkIOVeraOut-8.2.lib;vtkIOVideo-8.2.lib;vtkIOXML-8.2.lib;vtkIOXMLParser-8.2.lib;vtkjpeg-8.2.lib;vtkjsoncpp-8.2.lib;vtklibharu-8.2.lib;vtklibxml2-8.2.lib;vtkLocalExample-8.2.lib;vtklz4-8.2.lib;vtklzma-8.2.lib;vtkmetaio-8.2.lib;vtkNetCDF-8.2.lib;vtkogg-8.2.lib;vtkParallelCore-8.2.lib;vtkpng-8.2.lib;vtkproj-8.2.lib;vtkpugixml-8.2.lib;vtkRenderingAnnotation-8.2.lib;vtkRenderingContext2D-8.2.lib;vtkRenderingContextOpenGL2-8.2.lib;vtkRenderingCore-8.2.lib;vtkRenderingExternal-8.2.lib;vtkRenderingFreeType-8.2.lib;vtkRenderingGL2PSOpenGL2-8.2.lib;vtkRenderingImage-8.2.lib;vtkRenderingLabel-8.2.lib;vtkRenderingLOD-8.2.lib;vtkRenderingOpenGL2-8.2.lib;vtkRenderingQt-8.2.lib;vtkRenderingVolume-8.2.lib;vtkRenderingVolumeOpenGL2-8.2.lib;vtksqlite-8.2.lib;vtksys-8.2.lib;vtktheora-8.2.lib;vtktiff-8.2.lib;vtkverdict-8.2.lib;vtkViewsContext2D-8.2.lib;vtkViewsCore-8.2.lib;vtkViewsInfovis-8.2.lib;vtkViewsQt-8.2.lib;vtkzlib-8.2.lib;nvt_lvm_sdk.lib;LTDMC.lib;MvCameraControl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>_SILENCE_FPOS_SEEKPOS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;DEBUG_LHC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <AdditionalIncludeDirectories>D:\test_project\pin_project\Pin2\x64\Release\qt\uic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>editbin /subsystem:console $(OutDir)\$(TargetName).exe</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug2|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DatabaseManager.cpp" />
+    <ClCompile Include="src\style\qcustomplot.cpp" />
+    <ClCompile Include="src\style\QtMyGroupBox.cpp" />
+    <ClCompile Include="src\style\quiwidget.cpp" />
+    <ClCompile Include="src\style\showcpumemory.cpp" />
+    <ClCompile Include="src\style\TechGroupBox.cpp" />
+    <ClCompile Include="src\style\TimeSeriesPlot.cpp" />
+    <ClCompile Include="src\tool\rs_FunctionTool.cpp" />
+    <ClCompile Include="src\style\SmoothScrollLabel.cpp" />
+    <ClCompile Include="src\thread\ThreadGuard.cpp" />
+    <ClCompile Include="src\tool\ModbusManager.cpp" />
+    <ClCompile Include="src\tool\ModbusTcpServer.cpp" />
+    <ClCompile Include="src\tool\ModbusTcpClient.cpp" />
+    <ClCompile Include="src\style\BaseItem.cpp" />
+    <ClCompile Include="src\tool\JsonConfigManager.cpp" />
+    <ClCompile Include="ProductDatabaseManager.cpp" />
+    <ClCompile Include="src\pin\DataIO.cpp" />
+    <ClCompile Include="src\tool\QtcpClass.cpp" />
+    <ClCompile Include="src\style\ControlItem.cpp" />
+    <ClCompile Include="src\style\ImageItem.cpp" />
+    <ClCompile Include="src\style\ImageTypeConvert.cpp" />
+    <ClCompile Include="src\style\QGraphicsScenes.cpp" />
+    <ClCompile Include="src\style\QGraphicsViews.cpp" />
+    <ClCompile Include="src\style\qg_NgChart.cpp" />
+    <ClCompile Include="src\ui\qg_AxisState.cpp" />
+    <ClCompile Include="src\ui\qg_JogButton_BT.cpp" />
+    <ClCompile Include="src\ui\qg_JogButton_ED.cpp" />
+    <ClCompile Include="src\ui\qg_JogButton_ED_New.cpp" />
+    <ClCompile Include="src\ui\qg_JogButton_JMHan.cpp" />
+    <ClCompile Include="src\ui\qg_JogButton_JMPin.cpp" />
+    <ClCompile Include="src\ui\qg_MyMessageBox.cpp" />
+    <ClCompile Include="src\ui\qg_RobotProject_ED.cpp" />
+    <ClCompile Include="src\ui\qg_showResultPicDlg.cpp" />
+    <ClCompile Include="src\ui\qg_TestUI.cpp" />
+    <ClCompile Include="src\ui\qg_userChange.cpp" />
+    <ClCompile Include="src\ui\qg_VersionDialog.cpp" />
+    <ClCompile Include="src\ui\qg_QSLiteWidget.cpp" />
+    <ClCompile Include="src\ui\qg_JogButton.cpp" />
+    <ClCompile Include="src\style\pinLabel.cpp" />
+    <ClCompile Include="src\camera\Camera3D.cpp" />
+    <ClCompile Include="src\camera\MvCamera.cpp" />
+    <ClCompile Include="src\pin\Pin3DMeasure.cpp" />
+    <ClCompile Include="src\tool\qc_log.cpp" />
+    <ClCompile Include="src\style\RowData.cpp" />
+    <ClCompile Include="src\machine\rs_motion.cpp" />
+    <ClCompile Include="src\rs.cpp" />
+    <ClCompile Include="src\ui\Pin3DMeasureWindow.cpp" />
+    <ClCompile Include="src\pin\PinDetect.cpp" />
+    <ClCompile Include="src\ui\PinWindow.cpp" />
+    <ClCompile Include="src\ui\qg_2dCameraSetting.cpp" />
+    <ClCompile Include="src\ui\qg_AxisParameter.cpp" />
+    <ClCompile Include="src\ui\qg_Formula.cpp" />
+    <ClCompile Include="src\style\StatusDelegate.cpp" />
+    <ClCompile Include="src\style\SwitchDelegate.cpp" />
+    <ClCompile Include="src\thread\Thread.cpp" />
+    <ClCompile Include="src\pin\tinyxml2.cpp" />
+    <ClCompile Include="src\pin\XmlClass2.cpp" />
+    <ClCompile Include="src\camera\VisionTools.cpp" />
+    <ClCompile Include="src\vision\BarCodeDetect.cpp" />
+    <ClCompile Include="src\vision\BarCodeWindow.cpp" />
+    <ClCompile Include="src\vision\BlobDetect.cpp" />
+    <ClCompile Include="src\vision\BlobWindow.cpp" />
+    <ClCompile Include="src\vision\CircleDetect.cpp" />
+    <ClCompile Include="src\vision\CircleWindow.cpp" />
+    <ClCompile Include="src\vision\Common.cpp" />
+    <ClCompile Include="src\vision\PaintDetect.cpp" />
+    <ClCompile Include="src\vision\QRCodeDetect.cpp" />
+    <ClCompile Include="src\vision\QRCodeWindow.cpp" />
+    <ClCompile Include="src\vision\RobotCalibDetect.cpp" />
+    <ClCompile Include="src\vision\RobotCalibWindow.cpp" />
+    <ClCompile Include="src\vision\TemplateDetect.cpp" />
+    <ClCompile Include="src\vision\TemplateWindow.cpp" />
+    <QtRcc Include="imgResource.qrc" />
+    <QtRcc Include="src\ui\Pin2.qrc" />
+    <QtUic Include="src\ui\qg_AxisState.ui" />
+    <QtUic Include="src\ui\qg_JogButton_BT.ui" />
+    <QtUic Include="src\ui\qg_JogButton_ED.ui" />
+    <QtUic Include="src\ui\qg_JogButton_ED_New.ui" />
+    <QtUic Include="src\ui\qg_JogButton_JMHan.ui" />
+    <QtUic Include="src\ui\qg_JogButton_JMPin.ui" />
+    <QtUic Include="src\ui\qg_MyMessageBox.ui" />
+    <QtUic Include="src\ui\qg_RobotProject_ED.ui" />
+    <QtUic Include="src\ui\qg_showResultPicDlg.ui" />
+    <QtUic Include="src\ui\qg_TestUI.ui" />
+    <QtUic Include="src\ui\qg_userChange.ui" />
+    <QtUic Include="src\ui\qg_VersionDialog.ui" />
+    <QtUic Include="src\ui\qg_QSLiteWidget.ui" />
+    <QtUic Include="src\ui\qg_JogButton.ui" />
+    <QtUic Include="src\ui\Pin2.ui" />
+    <QtMoc Include="src\ui\Pin2.h" />
+    <ClCompile Include="src\pin\CMyLabel.cpp" />
+    <ClCompile Include="src\pin\datas.cpp" />
+    <ClCompile Include="src\ui\Pin2.cpp" />
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="src\ui\Pin3DMeasureWindow.ui" />
+    <QtUic Include="src\ui\PinWindow.ui" />
+    <QtUic Include="src\ui\qg_2dCameraSetting.ui" />
+    <QtUic Include="src\ui\qg_AxisParameter.ui" />
+    <QtUic Include="src\ui\qg_Formula.ui" />
+    <QtUic Include="src\vision\BarCodeWindow.ui" />
+    <QtUic Include="src\vision\BlobWindow.ui" />
+    <QtUic Include="src\vision\CircleWindow.ui" />
+    <QtUic Include="src\vision\QRCodeWindow.ui" />
+    <QtUic Include="src\vision\RobotCalibWindow.ui" />
+    <QtUic Include="src\vision\TemplateWindow.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\pin\cmylabel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\ui\qg_userChange.h" />
+    <QtMoc Include="src\style\QGraphicsViews.h" />
+    <QtMoc Include="src\style\ControlItem.h" />
+    <QtMoc Include="src\style\ImageItem.h" />
+    <QtMoc Include="src\style\QGraphicsScenes.h" />
+    <QtMoc Include="src\style\ImageTypeConvert.h" />
+    <QtMoc Include="src\tool\QtcpClass.h" />
+    <QtMoc Include="src\tool\JsonConfigManager.h" />
+    <QtMoc Include="src\ui\qg_showResultPicDlg.h" />
+    <QtMoc Include="src\style\BaseItem.h" />
+    <QtMoc Include="src\tool\ModbusTcpClient.h" />
+    <QtMoc Include="src\ui\qg_TestUI.h" />
+    <QtMoc Include="src\tool\ModbusTcpServer.h" />
+    <QtMoc Include="src\ui\qg_JogButton_ED_New.h" />
+    <QtMoc Include="src\style\SmoothScrollLabel.h" />
+    <QtMoc Include="src\ui\qg_MyMessageBox.h" />
+    <QtMoc Include="src\tool\rs_FunctionTool.h" />
+    <QtMoc Include="src\style\qcustomplot.h" />
+    <QtMoc Include="src\style\TimeSeriesPlot.h" />
+    <QtMoc Include="src\style\QtMyGroupBox.h" />
+    <QtMoc Include="src\style\TechGroupBox.h" />
+    <QtMoc Include="src\style\quiwidget.h" />
+    <QtMoc Include="src\style\showcpumemory.h" />
+    <ClInclude Include="src\thread\ThreadGuard.h" />
+    <ClInclude Include="src\tool\ModbusManager.h" />
+    <QtMoc Include="src\ui\qg_JogButton_BT.h" />
+    <QtMoc Include="src\ui\qg_RobotProject_ED.h" />
+    <QtMoc Include="src\ui\qg_JogButton_JMPin.h" />
+    <QtMoc Include="src\ui\qg_JogButton_JMHan.h" />
+    <ClInclude Include="src\vision\BarCodeDetect.h" />
+    <ClInclude Include="src\vision\BlobDetect.h" />
+    <ClInclude Include="src\vision\CircleDetect.h" />
+    <QtMoc Include="src\vision\Common.h" />
+    <ClInclude Include="src\vision\PaintDetect.h" />
+    <ClInclude Include="src\vision\QRCodeDetect.h" />
+    <ClInclude Include="src\vision\RobotCalibDetect.h" />
+    <QtMoc Include="src\vision\RobotCalibWindow.h" />
+    <ClInclude Include="src\vision\TemplateDetect.h" />
+    <QtMoc Include="src\vision\TemplateWindow.h" />
+    <QtMoc Include="src\vision\QRCodeWindow.h" />
+    <QtMoc Include="src\vision\CircleWindow.h" />
+    <QtMoc Include="src\vision\BlobWindow.h" />
+    <QtMoc Include="src\vision\BarCodeWindow.h" />
+    <QtMoc Include="src\ui\qg_AxisState.h" />
+    <QtMoc Include="src\ui\qg_JogButton_ED.h" />
+    <QtMoc Include="src\ui\PinWindow.h" />
+    <QtMoc Include="src\camera\VisionTools.h" />
+    <QtMoc Include="src\camera\Camera3D.h" />
+    <QtMoc Include="src\camera\MvCamera.h" />
+    <ClInclude Include="src\style\pinLabel.h" />
+    <QtMoc Include="DatabaseManager.h" />
+    <QtMoc Include="ProductDatabaseManager.h" />
+    <QtMoc Include="src\style\qg_NgChart.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\mvs\MvCamera.h" />
+    <ClInclude Include="src\pin\dataDetect.h" />
+    <ClInclude Include="src\pin\DataIO.h" />
+    <ClInclude Include="src\pin\datas.h" />
+    <QtMoc Include="src\ui\qg_2dCameraSetting.h" />
+    <QtMoc Include="src\ui\Pin3DMeasureWindow.h" />
+    <ClInclude Include="src\pin\Pin3DMeasure.h" />
+    <ClInclude Include="src\pin\PinDetect.h" />
+    <QtMoc Include="src\ui\qg_Formula.h" />
+    <QtMoc Include="src\ui\qg_AxisParameter.h" />
+    <QtMoc Include="src\tool\qc_log.h" />
+    <QtMoc Include="src\ui\qg_JogButton.h" />
+    <QtMoc Include="src\ui\qg_QSLiteWidget.h" />
+    <QtMoc Include="src\ui\qg_VersionDialog.h" />
+    <ClInclude Include="src\style\RowData.h" />
+    <QtMoc Include="src\machine\rs_motion.h" />
+    <ClInclude Include="src\rs.h" />
+    <QtMoc Include="src\style\StatusDelegate.h" />
+    <QtMoc Include="src\style\SwitchDelegate.h" />
+    <QtMoc Include="src\thread\Thread.h" />
+    <ClInclude Include="src\pin\tinyxml2.h" />
+    <ClInclude Include="src\pin\XmlClass2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtTranslation Include="src\translations\Translation_zh_CN.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Pin2.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+    <Image Include="icon2.ico" />
+    <Image Include="image\icons8-1.png" />
+    <Image Include="res\icons8-1.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
