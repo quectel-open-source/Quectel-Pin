@@ -1,3 +1,14 @@
+This project is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program incorporates code from the Qt Toolkit, which is:
+Copyright (C) 2025 The Qt Company Ltd. 
+Qt is distributed under the terms of the GNU General Public License version 3 (or later).
+
+For full details, please see the `LICENSE` file and the Qt licensing pages:
+- https://www.gnu.org/licenses/gpl-3.0.html
+- https://www.qt.io/licensing/
+
+=====================================================================
 
 **这是一个简短的项目描述，说明它的编译和运行环境。**
 
@@ -228,4 +239,5 @@
 ### 运行环境
 
 1、运行环境需要使用QT的windeployqt工具在本地打包QT相关动态库；
+
 2、需要以上编译环境静态库对应的动态库（dll）；
